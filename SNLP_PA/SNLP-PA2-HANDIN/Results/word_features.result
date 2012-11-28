@@ -1,0 +1,10 @@
+row = predicted, column = truth
+  B       I       O       
+B 11116.0 852.0   897.0   
+I 503.0   12640.0 682.0   
+O 716.0   965.0   19006.0 
+
+B 	precision 0.864050 	recall 0.901176	 F1 0.882222
+I 	precision 0.914286 	recall 0.874317	 F1 0.893855
+O 	precision 0.918741 	recall 0.923294	 F1 0.921012
+accuracy rate = 0.902590

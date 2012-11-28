@@ -1,0 +1,10 @@
+row = predicted, column = truth
+    neg   pos   
+neg 857.0 280.0 
+pos 143.0 720.0 
+
+neg 	precision 0.753738 	recall 0.857000	 F1 0.802059
+pos 	precision 0.834299 	recall 0.720000	 F1 0.772947
+accuracy rate = 0.788500
+
+
