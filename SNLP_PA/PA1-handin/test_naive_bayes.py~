@@ -1,0 +1,61 @@
+from helper import Instance
+from naive_bayes import NaiveBayes
+
+cat1 = Instance(label='cat', data=[1,0], raw_data=['purr' ,'purr' ,'meow'])
+cat2 = Instance(label='cat', data=[0,2],raw_data=['meow','woof'])
+cat3 = Instance(label='cat', data=[1],raw_data=['purr'])
+dog1 = Instance(label='dog', data=[3,2],raw_data=['bark','woof'])
+dog2 = Instance(label='dog', data=[2,0],raw_data=['woof','meow'])
+
+training_set = [cat1, cat2, cat3, dog1, dog2]
+
+classifier = NaiveBayes()
+classifier._collect_counts(training_set)
+
+cat_index = classifier.label_codebook.get_index('cat')
+dog_index = classifier.label_codebook.get_index('dog') 
+purr_index = classifier.feature_codebook.get_index('purr') 
+meow_index = classifier.feature_codebook.get_index('meow') 
+bark_index = classifier.feature_codebook.get_index('bark') 
+woof_index = classifier.feature_codebook.get_index('woof') 
+
+"""Test counting"""
+count_x_y = classifier.count_table
+count_x_y[purr_index, cat_index] == (2+1)
+count_x_y[meow_index, cat_index] == (2+1)
+count_x_y[bark_index, cat_index] == (0+1)
+count_x_y[woof_index, cat_index] == (1+1)
+
+count_x_y[purr_index, dog_index] == (0+1)
+count_x_y[meow_index, dog_index] == (1+1)
+count_x_y[bark_index, dog_index] == (1+1)
+count_x_y[woof_index, dog_index] == (2+1)
+
+#count_y = classifier.count_y_table
+#count_y[cat_index] == 3
+#count_y[dog_index] == 2
+
+"""Test probability tables
+Regardless of what kind of smoothing you do, the signs have to be right
+"""
+
+classifier.train(training_set)
+
+p_x_given_y = classifier.p_x_given_y_table
+p_x_given_y[meow_index, cat_index] > p_x_given_y[meow_index, dog_index]
+p_x_given_y[bark_index, cat_index] < p_x_given_y[bark_index, dog_index]
+
+p_y = classifier.p_y_table
+p_y[cat_index] > p_y[dog_index]
+
+"""Test smoothing
+Zero counts must not result in zero proability
+"""
+p_x_given_y[bark_index, cat_index] != 0
+p_x_given_y[purr_index, dog_index] != 0
+
+"""Test basic classification"""
+predictions = [classifier.classify_instance(x) for x in training_set]
+predictions == ['cat', 'cat', 'cat', 'dog', 'dog']
+
+

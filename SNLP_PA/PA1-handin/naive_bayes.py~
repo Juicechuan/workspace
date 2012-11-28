@@ -1,0 +1,165 @@
+"""Naive Bayes Classifier
+
+"""
+from base_classifier import BaseClassifier
+from helper import Alphabet, Instance
+from nltk.corpus import stopwords
+from nltk import FreqDist
+import util
+import numpy
+import math
+
+class NaiveBayes(BaseClassifier):
+
+	def __init__(self):
+		self.label_codebook = util.label_codebook
+		self.feature_codebook = util.feature_codebook
+	
+	def _collect_counts(self, instance_list):
+		"""Collect feature and label counts from the dataset
+
+		Create appropriate count tables and populate them
+		Replace this with the actual docstring
+		explaining the overview of the function, data structures of choice, etc.
+		"""
+
+		#pass
+		
+		#for test
+		#self.count_table = numpy.zeros((4,2))
+
+		#populate the count_table, for smoothing,initialize the array with value one
+		self.count_table = numpy.ones((self.feature_codebook.size(),self.label_codebook.size()))		
+		self.count_y_table = numpy.zeros(self.label_codebook.size())
+		#counts
+		for i in instance_list:
+			#delete the duplicated words and make it work for the Bernoulli distribution
+			i.raw_data = util.del_dup(i.raw_data)
+			self.count_y_table[self.label_codebook.get_index(i.label)] +=1
+			for token in i.raw_data:
+				if self.feature_codebook.has_label(token):							
+					self.count_table[self.feature_codebook.get_index(token),self.label_codebook.get_index(i.label)]+=1
+	def feature_selection_freq(self,instance_list,limits):
+		"""get the 2000 most frequent words"""
+		#to store all the tokens
+		all_words = []
+		#populates the codebook
+		for i in instance_list:
+			if self.label_codebook.has_label(i.label) == False:
+				self.label_codebook.add(i.label)
+			#here we do some feature selection work by filtering the stopwords defined by NLTK.
+			all_words += i.raw_data 			
+
+		#select the 'limit' most frequent words as feature
+		fdict = FreqDist([w for w in all_words])
+		word_feature = fdict.keys()[:limits]
+		for wd in word_feature:
+			self.feature_codebook.add(wd) 
+
+	def feature_selection_stopwd_freq(self,instance_list,limits):
+		"""get the 2000 most frequent words and filter out the stopwords"""
+		stopset = set(stopwords.words('english'))
+		#to store all the tokens
+		all_words = []
+		#populates the codebook
+		for i in instance_list:	
+			if self.label_codebook.has_label(i.label) == False:
+				self.label_codebook.add(i.label)
+			#here we do some feature selection work by filtering the stopwords defined by NLTK.
+			all_words += i.raw_data 			
+
+		#select the 'limit' most frequent words as feature
+		fdict = FreqDist([w for w in all_words])
+		word_feature = fdict.keys()[:limits]
+		for wd in word_feature:
+			if wd not in stopset:
+				self.feature_codebook.add(wd) 
+		#print "Here"
+				
+	def train(self, instance_list,func_id,limits):
+		"""Fit model parameters based on the dataset
+		
+		Update codebooks from the given data to be consistent with the probability tables
+		Populate p_x_given_y_table and p_y_table with their maximum likelihood estimates
+			For example :
+			self.p_x_given_y_table[10, 1] = P(X10 = 1|Y=1)
+			self.p_y_table[1] = P(Y=1)
+		You should also some kind of smoothing and some kind of feature selection
+		Replace this with the actual docstring explaining each step in your implementation
+		"""
+		if func_id == 0:
+			self.feature_selection_freq(instance_list,limits)
+		elif func_id == 1:
+			self.feature_selection_stopwd_freq(instance_list,limits)
+		else:
+			raise Exception,"Wrong feature selection id choosed!"
+		self._collect_counts(instance_list)
+		self.p_x_given_y_table = numpy.zeros((self.feature_codebook.size(), self.label_codebook.size()))
+		
+		self.p_y_table = numpy.zeros(self.label_codebook.size())
+
+		self.p_x_given_y_table = self.count_table/(self.count_y_table+self.feature_codebook.size())
+		self.p_y_table = self.count_y_table/self.count_y_table.sum()
+		
+
+	def compute_log_unnormalized_score(self, instance):
+		"""Compute log P(X|Y) + log P(Y) for all values of Y
+		
+		Returns a vector of loglikelihood.
+			loglikelihood_vector[0] = log P(X|Y=0) + log P(Y=0)
+
+		Replace this with the actual docstring 
+		explaining the overview of the function
+		"""
+		loglikelihood_vector = numpy.zeros(self.label_codebook.size())
+		for label in range(0,self.label_codebook.size()):
+			logpro = math.log(self.p_y_table[label])
+			for feature_index in self.feature_codebook._index_to_label.keys():
+				#check if it is a feature
+				if self.feature_codebook.get_label(feature_index) in instance.data:		
+					logpro += math.log(self.p_x_given_y_table[feature_index,label])
+				else:
+					logpro += math.log(1-self.p_x_given_y_table[feature_index,label])
+			loglikelihood_vector[label] = logpro 
+		return loglikelihood_vector
+
+	def classify_instance(self, instance):
+		"""Predict the label of the given instance
+		
+		Replace this with the actual docstring 
+		explaining the overview of the function
+		"""
+		vector = self.compute_log_unnormalized_score(instance)
+		#print vector
+		pre_label_index = numpy.argmax(vector) 		
+		return self.label_codebook.get_label(pre_label_index)
+
+
+	def to_dict(self):
+		"""Convert NaiveBayes instance into a dictionary representation
+
+		The implementation of this should be in sync with from_dict function.
+		You should be able to use these two functions to convert the model into
+		either representation (object or dictionary)
+		"""
+		model_dict = {
+			'label_alphabet': self.label_codebook.to_dict(),
+			'feature_alphabet': self.feature_codebook.to_dict(),
+			'p_x_given_y_table': self.p_x_given_y_table.tolist(),
+			'p_y_table': self.p_y_table.tolist()
+		}
+		return model_dict
+	@classmethod
+	def from_dict(cls, model_dict):
+		"""Convert a dictionary into NaiveBayes instance
+		
+		The implementation of this should be in sync with to_dict function.
+		"""
+		model_instance = NaiveBayes()
+		model_instance.label_codebook = Alphabet.from_dict(model_dict['label_alphabet'])
+		model_instance.feature_codebook = Alphabet.from_dict(model_dict['feature_alphabet'])
+		model_instance.p_x_given_y_table = numpy.array(model_dict['p_x_given_y_table'])
+		model_instance.p_y_table = numpy.array(model_dict['p_y_table'])
+
+		return model_instance
+

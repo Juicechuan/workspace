@@ -1,0 +1,3 @@
+1.directly run the "run.sh" and will get the experiments results stored in file but must have txt_sentoken in current folder
+2.Or you can try running main.py which is the entrance of the program with the command "ipython main.py func_id freq_limits" func_id=(0,1)
+3. if the program choose very few proportion train est the process will be long time... so forgive the ineffectiveness of the code..

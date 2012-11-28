@@ -1,0 +1,8 @@
+# coding: utf-8
+import nltk
+from helper import Alphabet, Instance
+f = open('txt_sentoken/neg/testfile.txt','r')
+raw_data = f.read()
+
+ins = Instance('testfile','begtive',None,raw_data)
+  

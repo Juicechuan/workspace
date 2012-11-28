@@ -1,0 +1,4 @@
+from helper import Alphabet
+#global variables 
+feature_codebook = Alphabet()
+label_codebook = Alphabet()

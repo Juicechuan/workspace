@@ -1,0 +1,65 @@
+#In this file we extract the feature from .txt files and we assume that the training process uses the 
+#raw_data of instance to train while the testing precess using the data of instance to test. But for #convenience of using the test_naive_bayes.py, I populate the data and raw_data of instance at the #same time
+# coding: utf-8
+import nltk
+from helper import Alphabet, Instance
+from naive_bayes import NaiveBayes
+import util
+from evaluator import split_train_test
+import random
+import argparse
+
+#filelist1 = get_ipython().getoutput(u'ls txt_sentoken/neg/')
+#filelist2 = get_ipython().getoutput(u'ls txt_sentoken/pos/')
+#ins_list = []
+
+nb = NaiveBayes()
+ID=None
+limits=None
+#get the feature selection function number 
+parser = argparse.ArgumentParser(description ='choose certain feature selection fucntion')
+parser.add_argument('ID',metavar='N',type=int)
+parser.add_argument('limits', metavar='N',type=int)
+args = parser.parse_args()
+ID = args.ID
+limits = args.limits
+
+def load_instance(filepath):
+	ins_list=[]
+	filelist = get_ipython().getoutput(u'ls '+filepath)
+	for filename in filelist:
+		f = open(filepath+filename,'r')
+		tokens=[]
+		data=[]
+		#read each line
+		for l in f:
+			tokens += nltk.regexp_tokenize(l,pattern="\w+")
+		data = util.del_dup(tokens)
+		if filepath[-4:-1] == 'neg':
+			ins = Instance(filename,'negative',data,tokens)	
+		elif filepath[-4:-1] == 'pos':
+			ins = Instance(filename,'positive',data,tokens)
+		else: 
+			raise Exception, "Wrong path!"
+		ins_list.append(ins)
+	f.close()
+    	return ins_list
+
+instance_list = load_instance('txt_sentoken/neg/')
+instance_list += load_instance('txt_sentoken/pos/')
+#random split train-test
+p0 = random.random()
+p1 = 1-p0
+prop = [p0,p1]
+#prop = [0.5,0.5]
+
+accuracy = split_train_test(nb,instance_list,prop,ID,limits)
+   
+nb.save("movie_review_classifier.json")
+nb1 = NaiveBayes.load("movie_review_classifier.json")
+
+accuracy = split_train_test(nb,instance_list,prop,ID)
+
+f = open('results/results'+repr(ID)+'.txt','a+w')
+f.write(repr(p0)+' '+repr(accuracy) + '\n')
+f.close()

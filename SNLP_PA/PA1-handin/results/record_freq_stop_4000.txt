@@ -1,0 +1,40 @@
+The number of train set is 1946.
+The number of test set is 54.
+The classification accuracy we got is 75.926%. 
+
+The number of train set is 660.
+The number of test set is 1340.
+The classification accuracy we got is 63.433%. 
+
+The number of train set is 924.
+The number of test set is 1076.
+The classification accuracy we got is 57.714%. 
+
+The number of train set is 1384.
+The number of test set is 616.
+The classification accuracy we got is 65.097%. 
+
+The number of train set is 1386.
+The number of test set is 614.
+The classification accuracy we got is 65.309%. 
+
+The number of train set is 772.
+The number of test set is 1228.
+The classification accuracy we got is 58.632%. 
+
+The number of train set is 1392.
+The number of test set is 608.
+The classification accuracy we got is 64.803%. 
+
+The number of train set is 384.
+The number of test set is 1616.
+The classification accuracy we got is 64.171%. 
+
+The number of train set is 1986.
+The number of test set is 14.
+The classification accuracy we got is 85.714%. 
+
+The number of train set is 1694.
+The number of test set is 306.
+The classification accuracy we got is 70.261%. 
+
