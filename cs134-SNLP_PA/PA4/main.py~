@@ -1,0 +1,9 @@
+#import nltk
+#import numpy as np
+#from maxent import MaxEnt
+#from helper import Instance
+#import util
+#import evaluator
+
+def load_sentence(fname):
+
