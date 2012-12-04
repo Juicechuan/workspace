@@ -299,7 +299,7 @@ evidence2 = dict(Burglary='T')
 
 
 print "result for the query P(Burglary|JohnCalls='T',MaryCalls='T')"
-burglarNet.elimination_ask('Burglary', evidence)
+burglarNet.elimination_ask('Burglary', evidence2)
 print "\n"
 print "result for the query P(Earthquake|JohnCalls='T')"
 burglarNet.elimination_ask('Earthquake', evidence1)
