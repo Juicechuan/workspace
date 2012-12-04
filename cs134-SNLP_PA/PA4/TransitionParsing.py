@@ -1,13 +1,13 @@
 """Implementation of the Transition-Based dependency parsing
    Using the MaxEnt classifier
 """
-
+#--------------------
 class Configuration(object):
     """a wrapper class for the configurations in the transition system,
        which contains:
        1) sigma: a stack of tokens 
        2) beta: a buffer of tokens 
-       3) A: a set of dependency arcs in which the arcs i->j are represented by the tuple(i,j)
+       3) A: a set of dependency arcs in which the arcs h(i)=j are represented by the tuple(j,i)
     """
     def __init__(self,sigma,beta,A):
         self.sigma = sigma
@@ -23,12 +23,21 @@ class TranSys(object):
         sigma = [0]
         beta = range(1,len(sentence)+1)
         A = set()
+        return Configuration(sigma,beta,A)
 
     def get_GS_parse(self,sentence):
         """given the sentence from the training set, get the correct dependency 
-           parse.
+           parse(the correct dependency arcs).
         """
-
-
+        GS_parse_arcs = []
+        for word in sentence:
+        	GS_parse_arcs.append(tuple(word[3],word[0]))
+        	
+        return GS_parse_arcs
+	
+	def Gold-parse(self,sentence):
+		""""""
+		start_config = self.init_config(self,sentence)
+		
 
         
