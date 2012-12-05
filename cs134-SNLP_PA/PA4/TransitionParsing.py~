@@ -1,4 +1,4 @@
-"""Implementation of the Transition-Based dependency parsing
+6"""Implementation of the Transition-Based dependency parsing
    Using the MaxEnt classifier
 """
 
@@ -13,5 +13,22 @@ class Configuration(object):
         self.sigma = sigma
         self.beta = beta
         self.A = A
-    
-    
+        
+class TranSys(object):
+    """this class represent the transition system."""
+    def __init__(self):
+        
+    def init_config(self,sentence):
+        """given the sentence, generate the initial configuration"""
+        sigma = [0]
+        beta = range(1,len(sentence)+1)
+        A = set()
+
+    def get_GS_parse(self,sentence):
+        """given the sentence from the training set, get the correct dependency 
+           parse.
+        """
+
+
+
+        

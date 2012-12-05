@@ -6,7 +6,10 @@ class Stack:
   "A container with a last-in-first-out (LIFO) queuing policy."
   def __init__(self,seq):
     self.list = seq
-    
+  
+  def top(self):
+    return self.list[-1]
+
   def push(self,item):
     "Push 'item' onto the stack"
     self.list.append(item)
@@ -20,16 +23,18 @@ class Stack:
     return len(self.list) == 0
     
 class Buffer:
-	"""A queue which always pop out the first element"""
-	def __init__(self, seq):
-		self.list = seq
-	
-	def pop():
-		self.list.remove(self.list[0])
-	
-	def isEmpty(self):
-		return len(self.list) == 0
-		
-		
-	def __eq__(self,other_stack):
-		return self.list == other_stack.list
+  """A queue which always pop out the first element"""
+  def __init__(self, seq):
+    self.list = seq
+
+  def top():
+    return self.list[0]
+
+  def pop():
+    self.list.remove(self.list[0])
+
+  def isEmpty(self):
+    return len(self.list) == 0
+
+  def __eq__(self,other_stack):
+    return self.list == other_stack.list

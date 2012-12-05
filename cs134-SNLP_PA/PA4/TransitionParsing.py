@@ -20,10 +20,20 @@ class Configuration(object):
     def is_terminal(self):
     	"""test if the current configuration is terminal"""
     	return self.beta.isEmpty()
-    	
+
+    def getBufferStackPair(self,direction='right'):
+        """For a configuration with σ|i and j|β,if direction is left return the pair (j,i);else if right return pair(i,j)"""
+    	if direction == 'left':
+            return tuple(self.beta.top(),self.sigma.top())
+        else if direction == 'right':
+            return tuple(self.sigma.top(),self,beta.top())
+        else:
+            raise(Exception,'right direction input')
+
 class TranSys(object):
     """this class represent the transition system."""
-    def __init__(self):
+    def __init__(self,transition_codebook):
+        self.transition_codebook = transition_codebook
         
     def init_config(self,sentence):
         """given the sentence, generate the initial configuration"""
@@ -38,18 +48,43 @@ class TranSys(object):
         """
         GS_parse_arcs = []
         for word in sentence:
-        	GS_parse_arcs.append(tuple(word[3],word[0]))
+            GS_parse_arcs.append(tuple(word[3],word[0]))
         	
         return GS_parse_arcs
 	
-	def Gold-parse(self,sentence):
-		""""""
-		start_config = self.init_config(sentence)
-		config = copy.deepcopy(start_config)
-		GS_arcs = self.get_GS_parse(sentence)
-		CT_pairs = []
-		while not config.is_terminal():
-			if config.sigma == start_config.sigma:
-				
+    def Gold_parse(self,sentence):
+        """the gold parse algorithm"""
+
+        start_config = self.init_config(sentence)
+        config = copy.deepcopy(start_config)
+        GS_arcs = self.get_GS_parse(sentence)
+        CT_pairs = []
+        while not config.is_terminal():
+            if config.sigma == start_config.sigma:
+		config = shift(config)
+                CT_pairs.append(tuple(config,'Shift'))
+            else:
+                transition_name = oracle(config,GS_arcs)
+                transition_func = self.transition_codebook.get_func(transition_name)
+                CT_pairs.append(tuple(config,transition_name))
+                config = transition_func(config)
 			
-        
+        return CT_pairs
+    
+    def oracle(self,config,GS_arcs):
+        """the oracle gives the correct transition for the current configuration"""
+        if config.getBufferStackPair('left') in GS_arcs:
+            return 'LeftArc'
+        else if config.getBufferStackPair('right') in GS_arcs:
+            return 'RightArc'
+        else:
+            return 'Shift'
+
+
+#------------------------
+transition_codebook = {'LeftArc':leftArc,
+                       'RightArc':rightArc,
+                       'Shift':shift}
+
+def leftArc(config):
+    
