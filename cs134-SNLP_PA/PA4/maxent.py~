@@ -210,8 +210,7 @@ class MaxEnt(BaseClassifier):
 					sparse_vector = numpy.append(sparse_vector,self.feature_codebook.get_index(feature))
 				else:
 					sparse_vector = numpy.append(sparse_vector,self.feature_codebook.get_index(feature))		
-			
-			instance_list[index].label = self.label_codebook.get_index(instance.label)
+					
 			instance_list[index].data = sparse_vector
 
 		##################
