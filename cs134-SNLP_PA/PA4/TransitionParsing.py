@@ -47,7 +47,9 @@ class TranSys(object):
     def init_config(self,sentence):
         """given the sentence, generate the initial configuration"""
 	self.token_dict = dict([(element[0],element[1]) for element in sentence])
+        self.token_dict[0] = 'root'
         self.POS_dict = dict([(element[0],element[2]) for element in sentence])
+        self.POS_dict[0] = 'ROOT'
         sigma = Stack([0])
         beta = Buffer(range(1,len(sentence)+1))
         A = set()
