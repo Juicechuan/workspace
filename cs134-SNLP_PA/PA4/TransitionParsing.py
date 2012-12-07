@@ -110,11 +110,11 @@ class TranSys(object):
             #token variants
             data.append(("topOfBuffer",self.token_dict[config.beta.top()]))
             data.append(("topOfStack",self.token_dict[config.sigma.top()]))
-            data.append(("bufferStackPair",(self.token_dict[config.sigma.top()],self.token_dict[config.beta.top()])))
+            data.append(("bufferStackPair",self.token_dict[config.sigma.top()],self.token_dict[config.beta.top()]))
             #POS variants
             data.append(("topOfBuffer",self.POS_dict[config.beta.top()]))
             data.append(("topOfStack",self.POS_dict[config.sigma.top()]))
-            data.append(("bufferStackPair",(self.POS_dict[config.sigma.top()],self.POS_dict[config.beta.top()])))
+            data.append(("bufferStackPair",self.POS_dict[config.sigma.top()],self.POS_dict[config.beta.top()]))
 
             ins = Instance(label = label,data = data)
             instances.append(ins)

@@ -78,7 +78,7 @@ class Alphabet(object):
 		and should be created with to_dict method above.
 		"""
 		alphabet = cls()
-		alphabet._label_to_index = dict([(eval(key),value) if key[0]=='(' else (key,value) for key,value in alphabet_dictionary['_label_to_index'].items()])
+		alphabet._label_to_index = dict([(eval(key),value) if isinstance(eval(key),tuple) else (key,value) for key,value in alphabet_dictionary['_label_to_index'].items()])
 		alphabet._index_to_label = {}
 		for label, index in alphabet._label_to_index.items():
 			alphabet._index_to_label[index] = label

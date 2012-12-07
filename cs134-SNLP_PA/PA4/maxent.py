@@ -234,10 +234,10 @@ class MaxEnt(BaseClassifier):
 		return model_dict
 
 	@classmethod
-	def from_dict(cls, model_dictionary):
+	def from_dict(cls, model_dict):
 		model_instance = MaxEnt()
 		model_instance.label_codebook = Alphabet.from_dict(model_dict['label_alphabet'])
 		model_instance.feature_codebook = Alphabet.from_dict(model_dict['feature_alphabet'])
-		model_instance.p_x_given_y_table = numpy.array(model_dict['parameters'])
+		model_instance.parameters = numpy.array(model_dict['parameters'])
 
 		return model_instance
