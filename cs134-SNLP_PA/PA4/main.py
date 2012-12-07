@@ -31,7 +31,7 @@ def load_sentence(fname):
     return raw_data
 
 #--------------------------
-sentence_instances = load_sentence("data/test")
+sentence_instances = load_sentence("data/wsj.00.01.22.24.conll")
 transition_codebook = {'LeftArc':leftArc,
                        'RightArc':rightArc,
                        'Shift':shift}
@@ -40,9 +40,9 @@ tranSys = TranSys(transition_codebook)
 instance_list = []
 for sentence in sentence_instances:
     CT_pairs = tranSys.Gold_parse(sentence)
-    print [c.sigma.list for c,t in CT_pairs]
+    #print [c.sigma.list for c,t in CT_pairs]
     instances = tranSys.feature_extract(CT_pairs)
-    instance_list.append(instances)
+    instance_list += instances 
 
 ME = MaxEnt()
 ME.train(instance_list)
