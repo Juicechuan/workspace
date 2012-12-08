@@ -99,7 +99,7 @@ class TranSys(object):
             return 'Shift'
 
     def feature_extract(self,CT_pairs):
-        """extract features from the configurationa and transition pairs;
+        """extract features from the configuration and transition pairs;
            return the instance list for one sentence
         """
         instances = []
