@@ -1,0 +1,16 @@
+Evaluation arguments: -s parser.conll -g wsj.23.conll
+====================================================
+Gold:   wsj.23.conll
+Parsed: parser.conll
+====================================================
+Metric-> LAS
+GroupBy-> Token
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.496         Row mean
+56684         Row count
+-----------------------
+

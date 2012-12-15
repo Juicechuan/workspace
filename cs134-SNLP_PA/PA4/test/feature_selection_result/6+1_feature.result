@@ -1,0 +1,21 @@
+row = predicted, column = truth
+         Shift   LeftArc RightArc 
+Shift    32935.0 727.0   2278.0   
+LeftArc  2609.0  22483.0 608.0    
+RightArc 6412.0  393.0   11842.0  
+
+Shift 	precision 0.916388 	recall 0.784989	 F1 0.845615
+LeftArc 	precision 0.874825 	recall 0.952548	 F1 0.912034
+RightArc 	precision 0.635062 	recall 0.804047	 F1 0.709633
+accuracy rate = 0.837745
+
+row = predicted, column = truth
+         Shift   LeftArc RightArc 
+Shift    29390.0 1305.0  2904.0   
+LeftArc  6228.0  21862.0 1111.0   
+RightArc 6338.0  436.0   10713.0  
+
+Shift 	precision 0.874728 	recall 0.700496	 F1 0.777976
+LeftArc 	precision 0.748673 	recall 0.926238	 F1 0.828043
+RightArc 	precision 0.612627 	recall 0.727390	 F1 0.665094
+accuracy rate = 0.771794
