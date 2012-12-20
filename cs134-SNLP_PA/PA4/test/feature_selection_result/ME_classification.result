@@ -1,0 +1,10 @@
+row = predicted, column = truth
+         LeftArc RightArc Shift   
+LeftArc  21091.0 867.0    3661.0  
+RightArc 218.0   10129.0  3432.0  
+Shift    2294.0  3732.0   34863.0 
+
+LeftArc 	precision 0.823256 	recall 0.893573	 F1 0.856975
+RightArc 	precision 0.735104 	recall 0.687738	 F1 0.710632
+Shift 	precision 0.852625 	recall 0.830942	 F1 0.841644
+accuracy rate = 0.823085

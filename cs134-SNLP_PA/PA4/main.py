@@ -56,7 +56,10 @@ for sentence,test_sentence in zip(sentence_instances,test_sentence_instances):
     test_instance_list += test_instances
     
 #----------------------------------
-#training the NaiveBayes Classifier in nltk
+# training the NaiveBayes Classifier in nltk and test the 6+1 featuresets
+# to run the NaiveBayes evaluation have to modify some of the code in TransitionParsing and evaluator since the 
+# nltk classifier and self-defined ME classifier has different methods
+
 # import nltk
 # featuresets = [(instance.data,instance.label) for instance in instance_list]
 # testsets = [(instance.data,instance.label) for instance in test_instance_list]
@@ -66,16 +69,18 @@ for sentence,test_sentence in zip(sentence_instances,test_sentence_instances):
 # #print classifier.labels()
 # CM = test_classifier(classifier,test_set)
 # CM.print_out()
+
 #----------------------------------  
+#MaxEnt training
 #ME = MaxEnt()
 #ME.train(instance_list)
 #ME.save("dependency_parsing_classifier.json")
 #finish training
 #----------------------------------
-#testing parser
+#testing parser and then use the loaded ME classifier to do the decoding thing and write the parsing result in file parser.conll
 ME = MaxEnt.load("dependency_parsing_classifier.json")
-# CM = test_classifier(ME,test_instance_list)
-# CM.print_out()
+CM = test_classifier(ME,test_instance_list)
+CM.print_out()
 tranSys = TranSys(transition_codebook)
 wfile = open('parser.conll','w')
 for test_sentence in test_sentence_instances:

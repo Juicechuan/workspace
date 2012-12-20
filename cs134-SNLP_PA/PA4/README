@@ -1,0 +1,5 @@
+My code this time is a little messy. Though I know how to modify it to make it work, it may not easy for others to successfully run all the functionality.
+1.to do the ME classifier based parser decoding:
+run main.py
+2.to do the additional feature NaiveBayes training, have to modify several code in TransitionParsing.py evaluator.py:
+

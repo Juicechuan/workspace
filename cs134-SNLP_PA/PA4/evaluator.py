@@ -54,11 +54,13 @@ def test_classifier(classifier, test_data):
 	Returns:
 		Confusion matrix
 	"""
-	labels = classifier.labels()
-	confusion_matrix = ConfusionMatrix(labels)
+	#labels = classifier.labels()
+	confusion_matrix = ConfusionMatrix(classifier.label_codebook)
 	for instance in test_data:
-		prediction = classifier.classify(instance[0])
-		confusion_matrix.add_data(prediction, instance[1])
+# 		prediction = classifier.classify(instance[0])
+# 		confusion_matrix.add_data(prediction, instance[1])
+		prediction = classifier.classify_instance(instance)
+		confusion_matrix.add_data(prediction, instance.label)
 	return confusion_matrix	
 
 def k_fold_cross_validation(classifier, instance_list, num_folds):
@@ -100,17 +102,17 @@ def k_fold_cross_validation(classifier, instance_list, num_folds):
 import numpy
 class ConfusionMatrix(object):
 
-	def __init__(self, labels):
-		label_codebook = Alphabet()
-		for label in labels:
-			label_codebook.add(label)
+	def __init__(self, label_codebook):
+# 		label_codebook = Alphabet()
+# 		for label in labels:
+# 			label_codebook.add(label)
 		self.label_codebook = label_codebook
 		num_classes = label_codebook.size()
 		self.matrix = numpy.zeros((num_classes,num_classes))
 
 	def add_data(self, prediction, true_answer):
 		#for	prediction, true_answer in zip(prediction_list, true_answer_list): 
-		self.matrix[self.label_codebook.get_index(prediction), self.label_codebook.get_index(true_answer)] += 1
+		self.matrix[prediction, self.label_codebook.get_index(true_answer)] += 1
 
 	def compute_precision(self):
 		"""Returns a numpy.array where precision[i] = precision for class i""" 

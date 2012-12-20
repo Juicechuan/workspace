@@ -1,0 +1,26 @@
+<evaluation>
+	<parameter name="Metric">
+		<value>LA</value>
+	</parameter>
+	<parameter name="GroupBy">
+		<value format="all|recall-10">Deprel</value>
+	</parameter>
+	<parameter name="ExcludeDeprels">
+		<value></value>
+		<value>Punc|Dummy</value>
+		</parameter>
+		<parameter name="MinSentenceLength">
+		<value>1</value>
+	</parameter>
+		<parameter name="MaxSentenceLength">
+		<value>40</value>
+	</parameter>
+	<formatting argument="details" format="1"/>
+	<formatting argument="header-info" format="1"/>
+	<formatting argument="row-header" format="1"/>
+	<formatting argument="tab" format="1"/>
+	<formatting argument="output" format="result.out"/>
+	<formatting argument="pattern" format="0.0000"/>
+	<formatting argument="stat" format="1"/>
+	<formatting argument="confusion-matrix" format="1"/>
+</evaluation>
