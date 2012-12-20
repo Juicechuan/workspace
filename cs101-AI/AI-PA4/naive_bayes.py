@@ -41,14 +41,14 @@ class Naive_Bayes(object):
 
     def extract_feature(self, string):
         """"""
-        vector = np.zeros(self.feature_codebook.size())
+        vector = np.zeros(0)
         tokens = set(nltk.regexp_tokenize(string, pattern="\w+"))
         indice = 0
         
         for word in tokens:
             if self.feature_codebook.has_label(word):
                 indice = self.feature_codebook.get_index(word)
-                vector[indice] = 1.
+                vector.append(indice)
 
         return vector
                  
@@ -60,7 +60,11 @@ class Naive_Bayes(object):
             Y_index = self.label_codebook.get_index(label)
             for vector in docs:
                 self.count_y_table[Y_index] += 1.0
-                self.count_table[:, Y_index] += vector
+                #self.count_table[:, Y_index] += vector
+                
+                #for sparse vector we use different counting method
+                for x in vector:
+                	self.count_table[x,Y_index] += 1.0
                 
     def train(self,theta):
         """"""
@@ -141,7 +145,7 @@ def bag_of_words(data, label_codebook, feature_codebook, theta):
 
 
 def bag_of_words_withTrigram(data, label_codebook, feature_codebook, theta):
-    """"""
+    """here we use sparse vector"""
     word_dict = Alphabet()
     stopset = set(stopwords.words('english'))
     for key, value in data.items():
@@ -158,26 +162,26 @@ def bag_of_words_withTrigram(data, label_codebook, feature_codebook, theta):
     for i,word in enumerate(all_words):
         feature_codebook.add(word)
         if i+2 < len(all_words):
-        	feature_codebook.add(str(word+" "+all_words[i+1]+" "+all_words[i+2]))
-		#print str(word+" "+all_words[i+1]+" "+all_words[i+2])
+            feature_codebook.add(str(word+" "+all_words[i+1]+" "+all_words[i+2]))
+        #print str(word+" "+all_words[i+1]+" "+all_words[i+2])
     
     instance_list = {}
     for label, document_list in data.items():
         instance_list[label] = []
         for document in document_list:
-            vector = np.zeros(feature_codebook.size())
+            vector = np.zeros(0)
             tokens = set(nltk.regexp_tokenize(document, pattern="\w+"))
             indice = 0
             
-	    tokens = list(tokens)
+        tokens = list(tokens)
             for i,word in enumerate(tokens):
                 if feature_codebook.has_label(word):
                     indice = feature_codebook.get_index(word)
-                    vector[indice] = 1.
-		#print str(word+" "+tokens[i+1]+" "+tokens[i+2])
+                    vector.append(indice)
+        #print str(word+" "+tokens[i+1]+" "+tokens[i+2])
                 if i+2 < len(tokens) and feature_codebook.has_label(str(word+" "+tokens[i+1]+" "+tokens[i+2])):
-                 	indice = feature_codebook.get_index(word+" "+all_words[i+1]+" "+all_words[i+2])
-                 	vector[indice] = 1.   
+                     indice = feature_codebook.get_index(str(word+" "+all_words[i+1]+" "+all_words[i+2]))
+                     vector.append(indice)
                 
             instance_list[label].append(vector)
     return instance_list
