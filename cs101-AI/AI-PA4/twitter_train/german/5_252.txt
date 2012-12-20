@@ -1,0 +1,1 @@
+wordpress 302 ist da perun hat sogar ein kleines updatepaket geschnürt nur einzelne dateien per ftp

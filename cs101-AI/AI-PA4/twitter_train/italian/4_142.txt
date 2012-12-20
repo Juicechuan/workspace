@@ -1,0 +1,1 @@
+in versioni più vecchie di ios se usavi la funzione zoom potevi aver problemi con app multitouch io li ho avuto
