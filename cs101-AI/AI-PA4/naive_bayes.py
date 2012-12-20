@@ -139,6 +139,47 @@ def bag_of_words(data, label_codebook, feature_codebook, theta):
             instance_list[label].append(vector)
     return instance_list
 
+
+def bag_of_words_withTrigram(data, label_codebook, feature_codebook, theta):
+    """"""
+    word_dict = Alphabet()
+    stopset = set(stopwords.words('english'))
+    for key, value in data.items():
+        label_codebook.add(key)
+        for doc in value:
+            doc_tokens = set(nltk.regexp_tokenize(doc, pattern="\w+"))
+            for word in doc_tokens:
+                if word not in stopset:
+                    word_dict.add(word)
+                    
+    all_words = word_dict._label_to_index.keys()
+    #fdict = FreqDist([w for w in all_words])
+    #word_feature = fdict.keys()[theta:]
+    for i,word in enumerate(all_words):
+        feature_codebook.add(word)
+        if i+2 < len(all_words):
+        	feature_codebook.add(word+" "+all_words[i+1]+" "+all_words[i+2])
+    
+    instance_list = {}
+    for label, document_list in data.items():
+        instance_list[label] = []
+        for document in document_list:
+            vector = np.zeros(2*feature_codebook.size()-2)
+            tokens = set(nltk.regexp_tokenize(document, pattern="\w+"))
+            indice = 0
+            
+            for i,word in enumerate(tokens):
+                if feature_codebook.has_label(word):
+                    indice = feature_codebook.get_index(word)
+                    vector[indice] = 1.
+                 if feature_codebook.has_label(word+" "+tokens[i+1]+" "+tokens[i+2]):
+                 	indice = feature_codebook.get_index(word+" "+all_words[i+1]+" "+all_words[i+2])
+                 	vector[indice] = 1.   
+                
+            instance_list[label].append(vector)
+    return instance_list
+
+
 def select_feature_function(data, label_codebook, feature_codebook, select_feature):
     """"""
     for key, value in data.items():
