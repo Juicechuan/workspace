@@ -1,0 +1,1 @@
+you can stop and restart recurring payments whenever you like but the datas valid for a maximum of 30 days

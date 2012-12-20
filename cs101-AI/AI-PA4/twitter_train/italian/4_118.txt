@@ -1,0 +1,1 @@
+in ios 43 non è stato aggiunto ma sostituito un font delle note
