@@ -1,0 +1,204 @@
+"""Contains a set of useful functions"""
+import collections
+import string
+import re
+
+
+#useful name list extracted from the training data
+loc_list = [i.strip() for i in open('ne_loc.log','r').readlines()]
+gpe_list = [i.strip() for i in open('ne_gpe.log','r').readlines()]
+org_list = [i.strip() for i in open('ne_org.log','r').readlines()]
+
+
+def isFirst(entry):
+    """check if it is the first word in the sentence"""
+    return entry[0] == '0'
+
+def isInitCaps(entry):
+    """check the word starts with a capital letter"""
+    return entry[1][:1].isupper()
+def isMixedCaps(entry):
+    """check If it starts with a lower case letter, 
+       and contains both upper and lower case letters"""
+    if entry[1][:1].islower() and not entry[1][1:].islower():
+        return True
+    return False
+
+def isAllCaps(entry):
+    """check If it is made up of all capital letters"""
+    return entry[1].isupper()
+
+def isEndWithPeriod(entry):
+    """check if ends with a period"""
+    return entry[1][-1]=="."
+
+def isOnlyOneCap(entry):
+    """check if Contains only one capital letter"""
+    return (len(entry[1])==1 and entry[1].isupper())
+
+def isContainsDigit(entry):
+    """check if Contains a digit"""
+    for char in entry[1]:
+        if char in string.digits:
+            return True
+    return False
+
+def is2digits(entry):
+    """check if made up of 2 digits"""
+    return (entry[1].isdigit() and len(entry[1])==2)
+
+def is4digits(entry):
+    """check if made up of 4 digits"""
+    return (entry[1].isdigit() and len(entry[1])==4)
+
+def isDigitSlash(entry):
+    """check if Made up of digits and slash"""
+    match = re.match('[0-9]*\/+[0-9]*',entry[1])
+    return match!=None
+
+def isContainsDollar(entry):
+    """check if Contains a dollar sign"""
+    return entry[1].find('$')!=-1
+
+def isContainsPercent(entry):
+    """check if Contains a percent sign"""
+    return entry[1].find('%')!=-1
+
+def isContainsPeriod(entry):
+    """Contains period"""
+    return entry[1].find('.')!=-1
+
+def isRareWords(entry,FWL_list):
+    """check if word is found in FWL"""
+    return entry[1] not in FWL_list
+
+def suffix_match(entry):
+    if len(entry[1])>=3:
+        return entry[1][-3:]
+    else:
+        return "NA"
+
+class Sent():
+    def __init__(self):
+        self.entry_list = []
+        self.zone = ""
+        self.feature_list = []
+
+    def add(self,entry):
+        self.entry_list.append(entry)
+
+    def set_zone(self,zone):
+        self.zone = zone
+
+    def set_features(self,feature_list):
+        self.feature_list = feature_list.copy()
+
+    def extract_zone(self):
+        """identify the zone of one sentence"""
+        CapsNo = 0.
+        #lettersNo = 0.5
+        #import pdb
+        #pdb.set_trace()
+        for entry in self.entry_list:
+            m = re.search('[a-zA-Z]+',entry[1])
+            if m!=None:
+                #lettersNo+=1
+                letters = m.group(0)
+                if letters[:1].isupper():
+                    CapsNo+=1.
+        if len(self.entry_list) == 0:
+            self.zone= "BLANK"
+            return
+        if CapsNo/len(self.entry_list) >= 0.7:
+            self.zone=  "TITLE"
+        elif CapsNo/len(self.entry_list) < 0.5:
+            self.zone= "TXT"
+        else:
+            self.zone=  "DD"
+    
+    def extract_local_feature(self,FWL_list):
+        """feature set one;
+           given one sentence, extract features we want
+           and return a list of dictionaries of feature name-value pairs
+        """
+        #isCaps = False
+        #isFirst = False
+
+        zone = self.zone
+        #feature_log = open('feature_list.log','w')
+
+        #init_feature_dict = 
+        #log output keys' sequence 
+        #dic = init_feature_dict.copy()
+        #for i,k in dic.items():
+        #    feature_log.write("%s %s\n"%(i,k))
+        #feature_log.close()
+
+        for entry in self.entry_list:
+            feature_dict = collections.OrderedDict() 
+            feature_dict["allCaps"] = isAllCaps(entry)
+            feature_dict["mixedCaps"] = isMixedCaps(entry)
+            feature_dict["First"] = isFirst(entry)
+            feature_dict["initCaps"] = isInitCaps(entry)
+            feature_dict["EndWithPeriod"] = isEndWithPeriod(entry)
+            feature_dict["allCapsPeriod"] = (isAllCaps(entry) and isEndWithPeriod(entry))
+            feature_dict["onlyOneCap"] = isOnlyOneCap(entry)
+            feature_dict["containsDigit"] = isContainsDigit(entry)
+            feature_dict["2digits"] = is2digits(entry)
+            feature_dict["4digits"] = is4digits(entry)
+            feature_dict["DigitSlash"] = isDigitSlash(entry)
+            feature_dict["containsDollar"] = isContainsDollar(entry)
+            feature_dict["containsPercent"] = isContainsPercent(entry)
+            feature_dict["DigitsPeriod"] = (isContainsDigit(entry) and isContainsPeriod(entry))
+            feature_dict["zone"] = zone
+            feature_dict["rareWords"] = isRareWords(entry,FWL_list)
+            feature_dict["suffix"] =  suffix_match(entry)
+    #        if isFirst(entry) and isCaps(entry):
+    #            feature_dict["First_Caps"] = True
+    #        elif not isFirst(entry) and isCaps(entry):
+    #            feature_dict["notFirst_Caps"] = True
+    #        elif isFirst(entry) and not isCaps(entry):
+    #            feature_dict["First_notCaps"] = True
+
+            self.feature_list.append(feature_dict)
+
+class Documt():
+    
+    def __init__(self):
+        self.sent_list=[]
+        self.word_dict={}
+
+    def add(self,sentence):
+        self.sent_list.append(sentence)
+    
+    def build_word_dict(self):
+        for sent in self.sent_list:
+            for entry,feature_dict in zip(sent.entry_list,sent.feature_list):
+                if entry[1].lower() not in self.word_dict.keys():
+                    self.word_dict[entry[1].lower()]=[(entry[1],feature_dict)]
+                else:
+                    self.word_dict[entry[1].lower()].append((entry[1],feature_dict))
+        
+    def isICOC(self,entry):
+        #if entry[1]=="Syrian":
+        #    import pdb
+        #    pdb.set_trace()
+        
+        if isInitCaps(entry):
+            for occur in self.word_dict[entry[1].lower()]:
+                if occur[1]["zone"] =="TXT" and occur[1]["First"] == False:
+                    first_occur = occur
+                    if first_occur[1]["initCaps"] == True:
+                        return "InitCaps"
+                    else:
+                        return "not-InitCaps"
+        return "NA"
+            
+    def extract_global_feature(self):
+        
+        self.build_word_dict()
+
+        for sent in self.sent_list:
+            for i,(entry,feature_dict) in enumerate(zip(sent.entry_list,sent.feature_list)):
+                sent.feature_list[i]["ICOC"] = self.isICOC(entry)
+    

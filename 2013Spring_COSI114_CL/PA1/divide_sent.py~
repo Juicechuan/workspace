@@ -1,0 +1,55 @@
+from nltk.corpus import switchboard
+
+verb_tag = ['VB','VBD','VBG','VBN','VBP','VBZ']
+weak_verbs = ["'m", "'re", "'s" "are", "be", "did", "do", "done", "guess",
+ "has", "have", "is", "mean", "seem", "think", "thinking",
+ "thought", "try", "was", "were"]
+
+def get_sent(turn):
+    """Take one turn instance and separate it into several sentences according 
+       to period. """
+    sent_list = []
+    start = 0
+    for i,word in enumerate(turn):
+        if word[0] == '.':
+            st = Sentence(turn[start:i+1])
+            sent_list.append(st)
+            start = i+1
+            
+    return sent_list
+
+def pivot_sentence(sent):
+    """find the pivot of sentences """
+
+    given = []
+    pivot = []
+    new = []
+    index = 0
+    #import pdb;
+    #pdb.set_trace()
+    for i,word in enumerate(sent):
+        #the first strong verb
+        if word[1] in verb_tag and word[0] not in weak_verbs:
+            given = sent[:i]
+            pivot = [word]
+            new = sent[i+1:]
+            return (given,pivot,new)
+        #the last weak verb
+        if sent[-i][0] in weak_verbs and not pivot:
+            pivot = [sent[-i]]
+            index = -i
+            
+    #no strong verb found
+    given = sent[:index]
+    new = sent[index+1:]
+    return (given,pivot,new)
+
+def main():
+    result = pivot_sentence(switchboard.tagged_discourses()[0][0])
+    print result
+
+if __name__ == "__main__":
+    main()
+
+       
+        

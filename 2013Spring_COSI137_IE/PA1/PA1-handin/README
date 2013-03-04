@@ -1,0 +1,6 @@
+To extract the name entity for one single sgml file, using:
+python ne_extract.py filename
+To deal with all the files in some folder, just run the script
+extract.sh foldername
+
+And the output .tagged file contains the result.

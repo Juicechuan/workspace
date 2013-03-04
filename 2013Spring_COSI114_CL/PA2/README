@@ -1,0 +1,12 @@
+1.Dividing the sentence 
+I divide each turn into sentences by using the POS tag '.' as separater.
+2.find the pivot.
+To implement the heuristic method described in the paper, I simultaneously find the first strong
+verb and the last weak verb by using index.
+
+To use the pivot function just import divide_sent and call pivot_sentence(sentence you want to deal with).
+
+The output result is a tuple of three lists like:
+([('Uh', 'UH'), (',', ','), ('do', 'VBP'), ('you', 'PRP')], 
+[('have', 'VB')], 
+[('a', 'DT'), ('pet', 'NN'), ('Randy', 'NNP'), ('?', '.')])

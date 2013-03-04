@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for file in $(ls $1/*.sgm)
+do 
+    python ne_extract.py $file
+    #echo $file
+done
+

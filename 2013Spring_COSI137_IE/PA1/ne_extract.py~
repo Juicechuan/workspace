@@ -1,0 +1,82 @@
+from xml.etree.ElementTree import ElementTree
+import commands
+import re
+import nltk
+import sys
+
+#apf_file_path = 'ace04-train-nwire/APW20001001.2021.0521.apf.xml'
+#sgm_file_path = 'ace04-train-nwire/APW20001001.2021.0521.sgm'
+
+def get_heads(xmlfilepath):
+    """to-do"""
+
+    xmltree = ElementTree().parse(xmlfilepath)
+
+    heads = {}
+    for i, ne in enumerate(xmltree.findall('document/entity')): 
+        ne_type = ne.attrib['TYPE']
+        for k,head_seq in enumerate(ne.findall('entity_mention/head/charseq')):
+            #print j, head_seq.text, head_seq.attrib['START'], head_seq.attrib['END']
+            heads[head_seq.attrib['START']] = (head_seq.attrib['END'],ne_type)
+
+    return heads
+
+
+def ne_extract(sgm_file_path,heads):
+    """to-do"""
+    #eliminate tags in the sgm file
+    doc = commands.getoutput("sed -e 's/<[^>]*>//g' " + str(sgm_file_path))
+    base = doc.find("\n\n\n")
+    text = doc[base:]
+
+    #pos tagger
+    entries = nltk.pos_tag(nltk.wordpunct_tokenize(text))
+    word_offsets = [(str(a+base),str(b-1+base)) for a,b in nltk.WordPunctTokenizer().span_tokenize(text)]
+    #print word_offsets
+    word_list = []
+    head_end = 0
+    head_label = ""
+    for (word,tag),(start,end) in zip(entries,word_offsets):
+        word_label = "O"
+        #if word == "after":
+        #    import pdb
+        #    pdb.set_trace()
+        if start in heads.keys():
+            head_label = heads[start][1]
+            word_label = "B_"+head_label
+            head_end = int(heads[start][0])
+            word_list.append((word,tag,word_label))
+        elif int(end) <= head_end:
+            word_label = "I_"+head_label
+            word_list.append((word,tag,word_label))
+        else:
+            word_label = "O"
+            word_list.append((word,tag,word_label))
+    return word_list    
+
+def output(word_list,sgm_file_path):
+    """output the extraction result to file"""
+    output_file = sgm_file_path[:-3]+"tagged"
+    wf = open(output_file,'w')
+    for word,tag,label in word_list:
+        wf.write("%s %s %s\n"%(word,tag,label))
+    wf.close()
+
+def main():
+   inputfile = ''
+   try:
+       inputfile = sys.argv[1]
+   except :
+      print 'Usage: ne_extract.py inputfile'
+      sys.exit(2)
+   sgm_file_path = inputfile
+   apf_file_path = inputfile[:-3]+"apf.xml"
+   heads = get_heads(apf_file_path)
+   wlist = ne_extract(sgm_file_path,heads)
+   output(wlist,sgm_file_path)
+
+if __name__ == "__main__":
+   main()
+
+
+

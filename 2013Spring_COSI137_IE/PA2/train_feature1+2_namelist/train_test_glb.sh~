@@ -1,0 +1,7 @@
+#!/bin/sh
+#python feature_extract.py train.gold train_feature1+2_nl_glb.gold
+#python feature_extract.py dev.raw dev_feature1+2_nl_glb.raw
+
+crf_learn -c 7 base+feature1+2_nl_glb.tpl train_feature1+2_nl_glb.gold base+feature1+2_nl_glb.model
+crf_test -m base+feature1+2_nl_glb.model dev_feature1+2_nl_glb.raw > base+feature1+2_nl_glb.result
+python ../evaluate-head.py dev.gold base+feature1+2_nl_glb.result 
