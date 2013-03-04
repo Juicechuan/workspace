@@ -41,14 +41,14 @@ class Naive_Bayes(object):
 
     def extract_feature(self, string):
         """"""
-        vector = np.zeros(0)
+        vector = np.zeros(self.feature_codebook.size())
         tokens = set(nltk.regexp_tokenize(string, pattern="\w+"))
         indice = 0
         
         for word in tokens:
             if self.feature_codebook.has_label(word):
                 indice = self.feature_codebook.get_index(word)
-                vector.append(indice)
+                vector[indice] = 1.0
 
         return vector
                  
@@ -60,17 +60,17 @@ class Naive_Bayes(object):
             Y_index = self.label_codebook.get_index(label)
             for vector in docs:
                 self.count_y_table[Y_index] += 1.0
-                #self.count_table[:, Y_index] += vector
+                self.count_table[:, Y_index] += vector
                 
-                #for sparse vector we use different counting method
-                for x in vector:
-                	self.count_table[x,Y_index] += 1.0
+                # for sparse vector we use different counting method
+                # for x in vector:
+                #    self.count_table[x,Y_index] += 1.0
                 
-    def train(self,theta):
+    def train(self, theta):
         """"""
         self.instance_list = self.feature_function(self.data, self.label_codebook, self.feature_codebook, theta)
         # self._populate_codebook_withSelectFeature()
-        #self.instance_list = self.feature_function(self.data, self.label_codebook, self.feature_codebook, select_feature)
+        # self.instance_list = self.feature_function(self.data, self.label_codebook, self.feature_codebook, select_feature)
         self._collect_counts()
         self.p_x_given_y_table = np.zeros((self.feature_codebook.size(), self.label_codebook.size()))
         self.p_y_table = np.zeros(self.label_codebook.size())
@@ -157,13 +157,13 @@ def bag_of_words_withTrigram(data, label_codebook, feature_codebook, theta):
                     word_dict.add(word)
                     
     all_words = word_dict._label_to_index.keys()
-    #fdict = FreqDist([w for w in all_words])
-    #word_feature = fdict.keys()[theta:]
-    for i,word in enumerate(all_words):
+    # fdict = FreqDist([w for w in all_words])
+    # word_feature = fdict.keys()[theta:]
+    for i, word in enumerate(all_words):
         feature_codebook.add(word)
-        if i+2 < len(all_words):
-            feature_codebook.add(str(word+" "+all_words[i+1]+" "+all_words[i+2]))
-        #print str(word+" "+all_words[i+1]+" "+all_words[i+2])
+        if i + 2 < len(all_words):
+            feature_codebook.add(str(word + " " + all_words[i + 1] + " " + all_words[i + 2]))
+        # print str(word+" "+all_words[i+1]+" "+all_words[i+2])
     
     instance_list = {}
     for label, document_list in data.items():
@@ -174,14 +174,14 @@ def bag_of_words_withTrigram(data, label_codebook, feature_codebook, theta):
             indice = 0
             
         tokens = list(tokens)
-            for i,word in enumerate(tokens):
-                if feature_codebook.has_label(word):
-                    indice = feature_codebook.get_index(word)
-                    vector.append(indice)
-        #print str(word+" "+tokens[i+1]+" "+tokens[i+2])
-                if i+2 < len(tokens) and feature_codebook.has_label(str(word+" "+tokens[i+1]+" "+tokens[i+2])):
-                     indice = feature_codebook.get_index(str(word+" "+all_words[i+1]+" "+all_words[i+2]))
-                     vector.append(indice)
+        for i, word in enumerate(tokens):
+            if feature_codebook.has_label(word):
+                indice = feature_codebook.get_index(word)
+                vector.append(indice)
+    # print str(word+" "+tokens[i+1]+" "+tokens[i+2])
+            if i + 2 < len(tokens) and feature_codebook.has_label(str(word + " " + tokens[i + 1] + " " + tokens[i + 2])):
+                 indice = feature_codebook.get_index(str(word + " " + all_words[i + 1] + " " + all_words[i + 2]))
+                 vector.append(indice)
                 
             instance_list[label].append(vector)
     return instance_list
@@ -268,11 +268,11 @@ def print_evaluation(classifier, test_data):
             
 # Examples of how to use the print_evaluation function. The bag_of_words
 # function will need to be written for this to work.
-#movie_train = {"pos":load_data("movie_train/pos"), "neg":load_data("movie_train/neg")}
-#movie_test = {"pos":load_data("movie_test/pos"), "neg":load_data("movie_test/neg")}
-#classifier = Naive_Bayes(movie_train,bag_of_words)
-#classifier.train(5000)
-#print_evaluation(classifier,movie_test)
+movie_train = {"pos":load_data("movie_train/pos"), "neg":load_data("movie_train/neg")}
+movie_test = {"pos":load_data("movie_test/pos"), "neg":load_data("movie_test/neg")}
+classifier = Naive_Bayes(movie_train, bag_of_words)
+classifier.train(5000)
+print_evaluation(classifier, movie_test)
 # 
 # print"\r\n"
 # select_feature = "good bad terrible awful great wonderful amazing disaster interesting boring fun bland".split()
@@ -282,8 +282,8 @@ def print_evaluation(classifier, test_data):
 
 print"\r\n"
 
-twitter_train = {"dutch":load_data("twitter_train/dutch"), "english":load_data("twitter_train/english"),"french":load_data("twitter_train/french"),"german":load_data("twitter_train/german"),"italian":load_data("twitter_train/italian"),"spanish":load_data("twitter_train/spanish")}
-twitter_test = {"dutch":load_data("twitter_test/dutch"), "english":load_data("twitter_test/english"),"french":load_data("twitter_test/french"),"german":load_data("twitter_test/german"),"italian":load_data("twitter_test/italian"),"spanish":load_data("twitter_test/spanish")}
-classifier = Naive_Bayes(twitter_train,bag_of_words_withTrigram)
+twitter_train = {"dutch":load_data("twitter_train/dutch"), "english":load_data("twitter_train/english"), "french":load_data("twitter_train/french"), "german":load_data("twitter_train/german"), "italian":load_data("twitter_train/italian"), "spanish":load_data("twitter_train/spanish")}
+twitter_test = {"dutch":load_data("twitter_test/dutch"), "english":load_data("twitter_test/english"), "french":load_data("twitter_test/french"), "german":load_data("twitter_test/german"), "italian":load_data("twitter_test/italian"), "spanish":load_data("twitter_test/spanish")}
+classifier = Naive_Bayes(twitter_train, bag_of_words)
 classifier.train(5000)
-print_evaluation(classifier,twitter_test)         
+print_evaluation(classifier, twitter_test)         
