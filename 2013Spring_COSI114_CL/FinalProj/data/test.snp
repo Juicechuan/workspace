@@ -1,0 +1,2368 @@
+
+(S
+  (SNP
+    (NP F.H./NNP Faulding/NNP)
+    &/CC
+    (NP Co./NNP)
+    ,/,
+    (NP an/DT Australian/JJ pharmaceuticals/NNS company/NN))
+  ,/,
+  said/VBD
+  (SNP (NP its/PRP$ Moleculon/NNP Inc./NNP)
+  affiliate/NN)
+  acquired/VBD
+  (SNP (NP Kalipharma/NNP Inc./NNP)) for/IN (NP $/$ 23/CD million/CD)
+  ./.)
+(S
+  (SNP (NP Kalipharma/NNP))
+  is/VBZ
+  (NP a/DT New/JJ Jersey-based/JJ pharmaceuticals/NNS concern/NN)
+  (NP that/WDT)
+  sells/VBZ
+  (SNP (NP products/NNS) under/IN (NP the/DT Purepac/NNP label/NN))
+  ./.)
+(S
+  (SNP (NP Faulding/NNP))
+  said/VBD
+  (NP it/PRP)
+  owns/VBZ
+  (SNP
+    (NP 33/CD %/NN)
+    of/IN
+    (NP Moleculon/NNP 's/POS voting/NN stock/NN))
+  and/CC
+  has/VBZ
+  (NP an/DT agreement/NN)
+  to/TO
+  acquire/VB
+  (NP an/DT additional/JJ 19/CD %/NN)
+  ./.)
+(S
+  (NP That/DT stake/NN)
+  ,/,
+  together/RB
+  with/IN
+  (SNP
+  (NP its/PRP$ convertible/JJ)
+  preferred/VBN
+  (NP stock/NN holdings/NNS))
+  ,/,
+  gives/VBZ
+  (SNP (NP Faulding/NNP)) 
+  (NP the/DT right/NN)
+  to/TO
+  increase/VB
+  (NP its/PRP$ interest/NN)
+  to/TO
+  (SNP
+    (NP 70/CD %/NN)
+    of/IN
+    (NP Moleculon/NNP 's/POS voting/NN stock/NN))
+  ./.)
+
+
+
+(S
+  (SNP (NP Furukawa/NNP Co./NNP) of/IN (NP Japan/NNP))
+  said/VBD
+  (NP it/PRP)
+  will/MD
+  acquire/VB
+  (NP two/CD construction/NN machinery/NN plants/NNS)
+  and/CC
+  (SNP (NP a/DT sales/NNS unit/NN) in/IN (NP France/NNP))
+  formerly/RB
+  belonging/VBG
+  to/TO
+  (SNP
+    (NP Dresser/NNP Industries/NNP Inc./NNP)
+    of/IN
+    (NP the/DT U.S/NNP))
+  ./.)
+(S
+  (NP The/DT company/NN)
+  said/VBD
+  (NP it/PRP)
+  made/VBD
+  (NP the/DT purchase/NN)
+  in/IN
+  (NP order/NN)
+  to/TO
+  locally/RB
+  produce/VB
+  hydraulically/RB
+  operated/VBN
+  (NP shovels/NNS)
+  ./.)
+(S
+  (SNP (NP Last/JJ October/NNP) ,/, (NP the/DT company/NN))
+  also/RB
+  bought/VBD
+  (SNP
+    (NP a/DT wheel-loader/JJ manufacturing/NN plant/NN)
+    in/IN
+    (NP Heidelberg/NNP)
+    ,/,
+    (NP West/NNP Germany/NNP))
+  ,/,
+  from/IN
+  (NP Dresser/NNP)
+  ./.)
+(S
+  (SNP (NP Furukawa/NNP))
+  said/VBD
+  (NP the/DT purchase/NN)
+  of/IN
+  (NP the/DT French/JJ)
+  and/CC
+  (NP German/JJ plants/NNS)
+  together/RB
+  will/MD
+  total/VB
+  about/RB
+  (NP 40/CD billion/CD yen/NNS)
+  (/(
+  (NP $/$ 280/CD million/CD)
+  )/)
+  ./.)
+
+
+(S
+  (SNP (NP LSI/NNP Logic/NNP Corp./NNP))
+  reported/VBD
+  (NP
+	a/DT
+	surprise/NN
+	$/$
+	35.7/CD
+	million/CD
+	third-quarter/JJ
+	net/JJ
+	loss/NN)
+  ,/,
+  including/VBG
+  (NP a/DT special/JJ restructuring/NN charge/NN)
+  (NP that/WDT)
+  reflects/VBZ
+  (SNP
+	(NP a/DT)
+	continuing/VBG
+	(NP industry-wide/JJ slowdown/NN)
+	in/IN
+	(NP semiconductor/NN demand/NN))
+  ./.)
+(S
+  In/IN
+  (SNP (NP September/NNP))
+  ,/,
+  (NP the/DT custom-chip/JJ maker/NN)
+  said/VBD
+  (NP excess/JJ capacity/NN)
+  and/CC
+  (NP lagging/VBG billings/NNS)
+  would/MD
+  result/VB
+  in/IN
+  (NP an/DT estimated/VBN $/$ 2/CD million/CD)
+  to/TO
+  (NP $/$ 3/CD million/CD net/JJ loss/NN)
+  for/IN
+  (NP the/DT third/JJ quarter/NN)
+  ./.)
+(S
+  But/CC
+  (NP company/NN officials/NNS)
+  said/VBD
+  yesterday/NN
+  that/IN
+  (NP they/PRP)
+  decided/VBD
+  to/TO
+  take/VB
+  (NP a/DT $/$ 43/CD million/CD pretax/JJ charge/NN)
+  for/IN
+  (NP the/DT period/NN)
+  to/TO
+  cover/VB
+  (NP a/DT)
+  restructuring/NN
+  of/IN
+  (NP world-wide/JJ manufacturing/NN operations/NNS)
+  ,/,
+  citing/VBG
+  (NP extended/JJ weakness/NN)
+  in/IN
+  (NP the/DT market/NN)
+  as/RB
+  well/RB
+  as/IN
+  (NP a/DT decision/NN)
+  to/TO
+  switch/VB
+  to/TO
+  (NP more/JJR economical/JJ production/NN techniques/NNS)
+  ./.)
+(S
+  ``/``
+  Over/IN
+  (NP the/DT summer/NN months/NNS)
+  ,/,
+  (NP there/EX)
+  has/VBZ
+  been/VBN
+  (NP a/DT slowing/NN)
+  in/IN
+  (NP the/DT rate/NN)
+  of/IN
+  (NP new/JJ orders/NNS)
+  from/IN
+  (NP the/DT computer/NN sector/NN)
+  ,/,
+  (NP our/PRP$ primary/JJ market/NN)
+  ,/,
+  ''/''
+  said/VBD
+  (SNP
+	(NP Wilfred/NNP J./NNP Corrigan/NNP)
+	,/,
+	(NP chairman/NN)
+	and/CC
+	(NP chief/JJ executive/JJ officer/NN))
+  ./.)
+(S
+  ``/``
+  In/IN
+  (NP addition/NN)
+  ,/,
+  (NP recent/JJ industry/NN)
+  forecasts/NNS
+  for/IN
+  (NP 1990/CD)
+  indicate/VBP
+  (NP a/DT slow/JJ environment/NN)
+  ,/,
+  at/IN
+  (NP least/JJS)
+  until/IN
+  (NP midyear/NN)
+  ./.)
+(S
+  ''/''
+  As/IN
+  (NP a/DT result/NN)
+  ,/,
+  (NP the/DT company/NN)
+  said/VBD
+  (NP it/PRP)
+  decided/VBD
+  to/TO
+  phase/VB
+  out/RP
+  (NP its/PRP$ oldest/JJS capacity/NN)
+  and/CC
+  ``/``
+  make/VB
+  (NP appropriate/JJ reductions/NNS)
+  ''/''
+  in/IN
+  operating/NN
+  (NP expenses/NNS)
+  ./.)
+(S
+  (NP The/DT $/$ 35.7/CD million/CD net/JJ loss/NN)
+  equals/VBZ
+  (NP 86/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  Not/RB
+  counting/VBG
+  (NP the/DT extraordinary/JJ charge/NN)
+  ,/,
+  (NP the/DT company/NN)
+  said/VBD
+  (NP it/PRP)
+  would/MD
+  have/VB
+  had/VBD
+  (NP a/DT net/JJ loss/NN)
+  of/IN
+  (NP $/$ 3.1/CD million/CD)
+  ,/,
+  or/CC
+  (NP seven/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (NP A/DT year/NN)
+  earlier/RBR
+  ,/,
+  (NP it/PRP)
+  had/VBD
+  (NP profit/NN)
+  of/IN
+  (NP $/$ 7.5/CD million/CD)
+  ,/,
+  or/CC
+  (NP 18/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (NP Revenue/NN)
+  rose/VBD
+  (NP 42/CD %/NN)
+  to/TO
+  (NP $/$ 133.7/CD million/CD)
+  from/IN
+  (NP $/$ 94/CD million/CD)
+  ./.)
+(S
+  (NP The/DT charge/NN)
+  partly/RB
+  reflects/VBZ
+  (NP a/DT switch/NN)
+  from/IN
+  (NP older/JJR five-inch/JJ)
+  to/TO
+  (NP more-efficient/JJ six-inch/JJ silicon/NN wafers/NNS)
+  with/IN
+  (NP which/WDT)
+  to/TO
+  fabricate/VB
+  (NP chips/NNS)
+  ./.)
+(S
+  Related/VBN
+  to/TO
+  (NP that/DT decision/NN)
+  ,/,
+  (NP the/DT company/NN)
+  said/VBD
+  (NP it/PRP)
+  was/VBD
+  converting/VBG
+  (SNP
+	(NP its/PRP$ Santa/NNP Clara/NNP)
+	,/,
+	(NP Calif./NNP)
+	,/,
+	(NP factory/NN))
+  to/TO
+  (NP a/DT research/NN)
+  and/CC
+  (NP development/NN facility/NN)
+  ./.)
+(S
+  (NP A/DT spokesman/NN)
+  declined/VBD
+  to/TO
+  speculate/VB
+  about/IN
+  (NP possible/JJ reductions/NNS)
+  in/IN
+  (NP force/NN)
+  ./.)
+(S
+  ``/``
+  (NP This/DT)
+  is/VBZ
+  (NP a/DT company/NN)
+  (NP that/WDT)
+  has/VBZ
+  invested/VBN
+  in/IN
+  (NP capacity/NN additions/NNS)
+  more/RBR
+  aggressively/RB
+  than/IN
+  (NP any/DT other/JJ company/NN)
+  in/IN
+  (NP the/DT industry/NN)
+  and/CC
+  now/RB
+  (NP the/DT industry/NN)
+  is/VBZ
+  growing/VBG
+  more/RBR
+  slowly/RB
+  and/CC
+  (NP they/PRP)
+  are/VBP
+  suddenly/RB
+  poorly/RB
+  positioned/VBN
+  ,/,
+  ''/''
+  said/VBD
+  (SNP
+	(NP Michael/NNP Stark/NNP)
+	,/,
+	(NP chip/NN analyst/NN)
+	at/IN
+	(NP Robertson/NNP)
+	,/,
+	(NP Stephens/NNP)
+	&/CC
+	(NP Co/NNP))
+  ./.)
+(S
+  ``/``
+  (NP I/PRP)
+  think/VBP
+  (NP the/DT stock/NN)
+  is/VBZ
+  (NP dead/JJ money/NN)
+  for/IN
+  (NP a/DT while/NN)
+  ./.)
+(S
+  ''/''
+  (NP Yesterday/NN 's/POS announcement/NN)
+  was/VBD
+  made/VBN
+  after/IN
+  (NP markets/NNS)
+  closed/VBD
+  ./.)
+(S
+  (SNP (NP U.S./NNP chip/NN makers/NNS))
+  are/VBP
+  facing/VBG
+  continued/VBN
+  (NP slack/JJ demand/NN)
+  following/VBG
+  (NP a/DT)
+  traditionally/RB
+  (NP slow/JJ summer/NN)
+  ./.)
+(S
+  (NP Part/NN)
+  of/IN
+  (NP the/DT problem/NN)
+  is/VBZ
+  that/IN
+  (NP chip/NN buyers/NNS)
+  are/VBP
+  keeping/VBG
+  (NP inventories/NNS)
+  low/JJ
+  because/IN
+  of/IN
+  (NP jitters/NNS)
+  about/IN
+  (SNP (NP the/DT course/NN) of/IN (NP the/DT U.S./NNP economy/NN))
+  ./.)
+
+
+(S
+  (SNP (NP Sea/NNP Containers/NNPS Ltd./NNP))
+  said/VBD
+  (NP it/PRP)
+  might/MD
+  increase/VB
+  (SNP
+    (NP the/DT price/NN)
+    of/IN
+    (NP its/PRP$ $/$ 70-a-share/JJ buy-back/JJ plan/NN))
+  if/IN
+  pressed/VBN
+  by/IN
+  (SNP (NP Temple/NNP Holdings/NNP Ltd./NNP) ,/, (NP which/WDT))
+  made/VBD
+  (SNP
+    (NP an/DT earlier/JJR tender/JJ offer/NN)
+    for/IN
+    (NP Sea/NNP Containers/NNPS))
+  ./.)
+(S
+  (SNP
+    (NP Sea/NNP Containers/NNPS)
+    ,/,
+    (NP a/DT Hamilton/NNP)
+    ,/,
+    (NP Bermuda-based/JJ shipping/NN concern/NN))
+  ,/,
+  said/VBD
+  (SNP (NP Tuesday/NNP) that/IN (NP it/PRP))
+  would/MD
+  sell/VB
+  (SNP (NP $/$ 1.1/CD billion/CD) of/IN (NP assets/NNS))
+  and/CC
+  use/VB
+  (SNP (NP some/DT) of/IN (NP the/DT proceeds/NNS))
+  to/TO
+  buy/VB
+  about/IN
+  (SNP (NP 50/CD %/NN) of/IN (NP its/PRP$ common/JJ shares/NNS))
+  for/IN
+  (NP $/$ 70/CD)
+  apiece/RB
+  ./.)
+(S
+  (NP The/DT move/NN)
+  is/VBZ
+  designed/VBN
+  to/TO
+  ward/VB
+  off/IN
+  (SNP
+    (NP a/DT hostile/JJ takeover/NN attempt/NN)
+    by/IN
+    (NP two/CD European/JJ))
+  shipping/NN
+  (SNP
+    (NP concerns/NNS)
+    ,/,
+    (NP Stena/NNP Holding/NNP AG/NNP)
+    and/CC
+    (NP Tiphook/NNP PLC/NNP))
+  ./.)
+(S
+  In/IN
+  (SNP (NP May/NNP) ,/, (NP the/DT two/CD companies/NNS))
+  ,/,
+  through/IN
+  (NP their/PRP$)
+  jointly/RB
+  owned/VBN
+  (SNP (NP holding/VBG company/NN) ,/, (NP Temple/NNP))
+  ,/,
+  offered/VBD
+  (NP $/$ 50/CD)
+  (NP a/DT share/NN)
+  ,/,
+  or/CC
+  (SNP
+    (NP $/$ 777/CD million/CD)
+    ,/,
+    for/IN
+    (NP Sea/NNP Containers/NNPS))
+  ./.)
+(S
+  In/IN
+  (SNP (NP August/NNP) ,/, (NP Temple/NNP))
+  sweetened/VBD
+  (NP the/DT offer/NN)
+  to/TO
+  (SNP
+    (NP $/$ 63/CD)
+    (NP a/DT share/NN)
+    ,/,
+    or/CC
+    (NP $/$ 963/CD million/CD))
+  ./.)
+(S
+  (SNP
+    (NP Yesterday/NN)
+    ,/,
+    (NP
+      Sea/NNP
+      Containers/NNPS
+      '/POS
+      chief/JJ
+      executive/NN
+      officer/NN)
+    ,/,
+    (NP James/NNP Sherwood/NNP))
+  ,/,
+  said/VBD
+  in/IN
+  (NP an/DT interview/NN)
+  that/IN
+  ,/,
+  under/IN
+  (SNP
+    (NP the/DT asset-sale/JJ plan/NN)
+    ,/,
+    (NP Sea/NNP Containers/NNPS))
+  would/MD
+  end/VB
+  up/IN
+  with/IN
+  (NP a/DT cash/NN surplus/NN)
+  of/IN
+  approximately/RB
+  (NP $/$ 620/CD million/CD)
+  ./.)
+(S
+  About/IN
+  (SNP (NP $/$ 490/CD million/CD) of/IN (NP that/WDT))
+  would/MD
+  be/VB
+  allocated/VBN
+  to/TO
+  (NP the/DT buy-back/NN)
+  ,/,
+  leaving/VBG
+  about/IN
+  (SNP (NP $/$ 130/CD million/CD) ,/, (NP he/PRP))
+  said/VBD
+  ./.)
+(S
+  (SNP
+    (NP That/DT $/$ 130/CD million/CD)
+    ,/,
+    (NP Mr./NNP Sherwood/NNP))
+  said/VBD
+  ,/,
+  ``/``
+  gives/VBZ
+  (SNP
+    (NP us/PRP)
+    (NP some/DT flexibility/NN)
+    in/IN
+    (NP case/NN Temple/NNP))
+  raises/VBZ
+  (NP its/PRP$ bid/NN)
+  ./.)
+(S
+  (NP We/PRP)
+  are/VBP
+  able/JJ
+  to/TO
+  increase/VB
+  (SNP
+    (NP our/PRP$ price/NN)
+    above/IN
+    (NP the/DT $/$ 70/CD level/NN))
+  if/IN
+  (NP necessary/JJ)
+  ./.)
+(S
+  ''/''
+  (NP He/PRP)
+  declined/VBD
+  to/TO
+  say/VB
+  ,/,
+  however/RB
+  ,/,
+  how/WRB
+  (SNP (NP much/JJ Sea/NNP Containers/NNPS))
+  might/MD
+  raise/VB
+  (NP its/PRP$ price/NN)
+  ./.)
+(S
+  (SNP (NP Mr./NNP Sherwood/NNP))
+  speculated/VBD
+  that/IN
+  (SNP (NP the/DT leeway/NN) that/IN (NP Sea/NNP Containers/NNPS))
+  has/VBZ
+  means/VBZ
+  (SNP (NP that/DT Temple/NNP))
+  would/MD
+  have/VB
+  to/TO
+  ``/``
+  substantially/RB
+  increase/VB
+  (SNP (NP their/PRP$ bid/NN) if/IN (NP they/PRP))
+  're/VBP
+  going/VBG
+  to/TO
+  top/VB
+  (NP us/PRP)
+  ./.)
+(S
+  ''/''
+  (SNP (NP Temple/NNP))
+  ,/,
+  however/RB
+  ,/,
+  harshly/RB
+  criticized/VBD
+  (SNP (NP Sea/NNP Containers/NNPS '/POS plan/NN yesterday/NN))
+  ,/,
+  characterizing/VBG
+  (SNP (NP it/PRP) as/IN (NP a/DT))
+  ``/``
+  highly/RB
+  (NP conditional/JJ device/NN)
+  designed/VBN
+  to/TO
+  entrench/VB
+  (NP management/NN)
+  ,/,
+  confuse/VB
+  (NP shareholders/NNS)
+  and/CC
+  prevent/VB
+  (NP them/PRP)
+  from/IN
+  accepting/VBG
+  (NP our/PRP$ superior/JJ cash/NN offer/NN)
+  ./.)
+(S
+  ''/''
+  (SNP (NP A/DT spokesman/NN) for/IN (NP Temple/NNP))
+  estimated/VBD
+  that/IN
+  (SNP (NP Sea/NNP Containers/NNPS '/POS plan/NN))
+  --/:
+  if/IN
+  (NP all/PDT the/DT asset/NN sales/NNS)
+  materialize/VBP
+  (SNP (NP --/: would/MD result/VB) in/IN (NP shareholders/NNS))
+  receiving/VBG
+  only/RB
+  (NP $/$ 36/CD)
+  to/TO
+  (SNP (NP $/$ 45/CD) (NP a/DT share/NN) in/IN (NP cash/NN))
+  ./.)
+(S
+  (SNP
+    (NP The/DT lower/JJR figures/NNS)
+    ,/,
+    (NP the/DT spokesman/NN))
+  said/VBD
+  ,/,
+  would/MD
+  stem/VB
+  from/IN
+  (NP preferred/VBN shares/NNS)
+  being/VBG
+  converted/VBN
+  to/TO
+  (NP common/JJ stock/NN)
+  and/CC
+  (SNP
+    (NP the/DT possibility/NN)
+    that/IN
+    (NP Sea/NNP Containers/NNPS '/POS subsidiaries/NNS))
+  might/MD
+  be/VB
+  required/VBN
+  to/TO
+  place/VB
+  (SNP
+    (NP their/PRP$ shares/NNS)
+    in/IN
+    (NP the/DT open/JJ market/NN))
+  ./.)
+(S
+  (SNP (NP Temple/NNP))
+  added/VBD
+  that/IN
+  (SNP (NP Sea/NNP Containers/NNPS))
+  is/VBZ
+  still/RB
+  mired/VBN
+  in/IN
+  (SNP (NP legal/JJ problems/NNS) in/IN (NP Bermuda/NNP))
+  ,/,
+  where/WRB
+  (SNP (NP the/DT Supreme/NNP Court/NNP))
+  has/VBZ
+  temporarily/RB
+  barred/VBN
+  (SNP (NP Sea/NNP Containers/NNPS))
+  from/IN
+  buying/VBG
+  back/RB
+  (SNP (NP its/PRP$ own/JJ stock/NN) in/IN (NP a/DT case/NN))
+  brought/VBN
+  by/IN
+  (SNP (NP Stena/NNP) and/CC (NP Tiphook/NNP))
+  ./.)
+(S
+  {/(
+  (NP The/DT court/NN)
+  has/VBZ
+  indicated/VBN
+  (NP it/PRP)
+  will/MD
+  rule/VB
+  on/IN
+  (SNP (NP the/DT case/NN) by/IN (NP the/DT end/NN))
+  of/IN
+  (NP the/DT month/NN)
+  ./.)
+(S
+  }/)
+  (SNP (NP Temple/NNP))
+  also/RB
+  said/VBD
+  (SNP (NP Sea/NNP Containers/NNPS '/POS plan/NN))
+  raises/VBZ
+  ``/``
+  (SNP (NP numerous/JJ legal/JJ) ,/, (NP regulatory/JJ)
+  ,/,
+  (NP financial/JJ)
+  and/CC
+  (NP fairness/NN issues/NNS))
+  ,/,
+  ''/''
+  but/CC
+  did/VBD
+  n't/RB
+  (NP elaborate/VB)
+  ./.)
+(S
+  (SNP (NP Mr./NNP Sherwood/NNP))
+  said/VBD
+  (NP reaction/NN)
+  to/TO
+  (SNP (NP Sea/NNP Containers/NNPS '/POS proposal/NN))
+  has/VBZ
+  been/VBN
+  ``/``
+  very/RB
+  positive/JJ
+  ./.)
+(S
+  ''/''
+  In/IN
+  (SNP
+    (NP
+      New/NNP
+      York/NNP
+      Stock/NNP
+      Exchange/NNP
+      composite/JJ
+      trading/NN
+      yesterday/NN)
+    ,/,
+    (NP Sea/NNP Containers/NNPS))
+  closed/VBD
+  at/IN
+  (NP $/$ 62.625/CD)
+  ,/,
+  up/RB
+  (NP 62.5/CD cents/NNS)
+  ./.)
+
+
+
+
+(S
+  (SNP (NP GOODY/NNP PRODUCTS/NNP Inc./NNP))
+  cut/VBD
+  (NP its/PRP$ quarterly/JJ dividend/NN)
+  to/TO
+  (NP five/CD cents/NNS)
+  (NP a/DT share/NN)
+  from/IN
+  (NP 11.5/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (NP The/DT reduced/VBN dividend/NN)
+  is/VBZ
+  (NP payable/JJ Jan./NNP 2/CD)
+  to/TO
+  (SNP
+  stock/NN
+  of/IN
+  (NP record/NN Dec./NNP 15/CD))
+  ./.)
+(S
+  (SNP
+    (NP The/DT Kearny/NNP)
+    ,/,
+    (NP N.J.-based/JJ maker/NN)
+    of/IN
+    (NP hair/NN accessories/NNS)
+    and/CC
+    (NP other/JJ cosmetic/NN products/NNS))
+  said/VBD
+  (NP it/PRP)
+  cut/VBD
+  (NP the/DT dividend/NN)
+  due/JJ
+  to/TO
+  (NP its/PRP$ third-quarter/NN loss/NN)
+  of/IN
+  (NP $/$ 992,000/CD)
+  ,/,
+  or/CC
+  (NP 15/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  In/IN
+  (NP the/DT year-ago/JJ quarter/NN)
+  ,/,
+  (NP the/DT company/NN)
+  reported/VBD
+  (NP net/JJ income/NN)
+  of/IN
+  (NP $/$ 1.9/CD million/CD)
+  ,/,
+  or/CC
+  (NP 29/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (NP The/DT company/NN)
+  also/RB
+  adopted/VBD
+  (NP an/DT anti-takeover/JJ plan/NN)
+  ./.)
+
+
+
+
+(S
+  (SNP
+    (NP Michael/NNP Henderson/NNP)
+    ,/,
+    (NP 51-year-old/JJ group/NN chief/NN executive/NN)
+    of/IN
+    (NP this/DT U.K./NNP metals/NNS)
+    and/CC
+    (NP industrial/JJ materials/NNS maker/NN))
+  ,/,
+  will/MD
+  become/VB
+  (SNP (NP chairman/NN) in/IN (NP May/NNP))
+  ,/,
+  succeeding/VBG
+  (SNP (NP Ian/NNP Butler/NNP) ,/, (NP 64/CD) ,/, (NP who/WP))
+  is/VBZ
+  retiring/VBG
+  ./.)
+(S
+  (SNP (NP Mr./NNP Butler/NNP))
+  will/MD
+  remain/VB
+  on/IN
+  (NP the/DT board/NN)
+  as/IN
+  (NP a/DT nonexecutive/JJ director/NN)
+  ./.)
+
+
+
+
+
+
+(S
+ (S
+  (SNP
+    (NP Hudson/NNP General/NNP Corp./NNP 's/POS president/NN)
+    and/CC
+    (NP chief/JJ executive/NN officer/NN)
+    ,/,
+    (NP Alan/NNP J./NNP Stearn/NNP))
+  ,/,
+  resigned/VBD
+  ./.)
+(S
+  (SNP (NP Mr./NNP Stearn/NNP) ,/, (NP 46/CD years/NNS) old/JJ)
+  ,/,
+  could/MD
+  n't/RB
+  be/VB
+  reached/VBN
+  for/IN
+  (NP comment/NN)
+  ./.)
+(S
+  (NP A/DT company/NN spokesman/NN)
+  declined/VBD
+  to/TO
+  elaborate/VB
+  on/IN
+  (NP the/DT departure/NN)
+  ./.)
+(S
+  (SNP (NP Hudson/NNP General/NNP) ,/, (NP which/WDT))
+  provides/VBZ
+  (NP maintenance/NN)
+  ,/,
+  fueling/NN
+  and/CC
+  (NP other/JJ services/NNS)
+  to/TO
+  (NP airlines/NNS)
+  and/CC
+  (NP airports/NNS)
+  ,/,
+  reported/VBD
+  (NP a/DT loss/NN)
+  for/IN
+  (NP its/PRP$ most/RBS recent/JJ fiscal/NN year/NN)
+  and/CC
+  (NP last/JJ month/NN)
+  omitted/VBD
+  (NP the/DT semiannual/JJ dividend/NN)
+  on/IN
+  (NP its/PRP$ common/JJ shares/NNS)
+  ./.)
+(S
+  (SNP (NP Mr./NNP Stearn/NNP) ,/, (NP who/WP))
+  had/VBD
+  been/VBN
+  with/IN
+  (NP the/DT company/NN)
+  more/JJR
+  than/IN
+  (NP 20/CD years/NNS)
+  and/CC
+  had/VBD
+  been/VBN
+  (NP president/NN)
+  since/IN
+  (NP 1984/CD)
+  ,/,
+  will/MD
+  act/VB
+  as/IN
+  (NP a/DT consultant/NN)
+  to/TO
+  (SNP (NP Hudson/NNP General/NNP))
+  ./.)
+(S
+  (NP His/PRP$ duties/NNS)
+  as/IN
+  (NP chief/JJ executive/NN)
+  will/MD
+  be/VB
+  assumed/VBN
+  by/IN
+  (SNP (NP Chairman/NNP Jay/NNP B./NNP Langner/NNP))
+  ./.)
+ (SNP
+	(NP William/NNP C./NNP Walbrecher/NNP Jr./NNP)
+	,/,
+	(NP an/DT executive/NN)
+	at/IN
+	(NP San/NNP Francisco-based/JJ 1st/CD Nationwide/NNP Bank/NNP))
+  ,/,
+  was/VBD
+  named/VBN
+  (NP president/NN)
+  and/CC
+  (NP chief/NN executive/JJ officer/NN)
+  of/IN
+  (SNP
+	(NP Citadel/NNP Holding/NNP Corp./NNP)
+	and/CC
+	(NP its/PRP$ principal/JJ operating/VBG unit/NN)
+	,/,
+	(NP Fidelity/NNP Federal/NNP Bank/NNP))
+  ./.)
+(S
+  (NP The/DT appointment/NN)
+  takes/VBZ
+  (SNP (NP effect/NN Nov./NNP 13/CD))
+  ./.)
+(S
+  (NP He/PRP)
+  succeeds/VBZ
+  (SNP (NP James/NNP A./NNP Taylor/NNP))
+  ,/,
+  (NP who/WP)
+  stepped/VBD
+  down/IN
+  as/IN
+  (SNP
+  (NP chairman/NN)
+  ,/,
+  (NP president/NN)
+  and/CC
+  (NP chief/NN executive/NN))
+  in/IN
+  (NP March/NNP)
+  for/IN
+  (NP health/NN reasons/NNS)
+  ./.)
+(S
+  (SNP (NP Edward/NNP L./NNP Kane/NNP))
+  succeeded/VBD
+  (SNP (NP Mr./NNP Taylor/NNP) as/IN (NP chairman/NN))
+  ./.)
+(S
+  (NP Separately/RB)
+  ,/,
+  (SNP (NP Citadel/NNP))
+  posted/VBD
+  (NP a/DT third-quarter/NN net/JJ loss/NN)
+  of/IN
+  (NP $/$ 2.3/CD million/CD)
+  ,/,
+  or/CC
+  (NP 68/CD cents/NNS)
+  (NP a/DT share/NN)
+  ,/,
+  versus/CC
+  (NP net/JJ income/NN)
+  of/IN
+  (NP $/$ 5.3/CD million/CD)
+  ,/,
+  or/CC
+  (NP $/$ 1.61/CD)
+  (NP a/DT share/NN)
+  ,/,
+  (NP a/DT year/NN)
+  earlier/JJR
+  ./.)
+(S
+  (NP The/DT latest/JJS results/NNS)
+  include/VBP
+  (NP some/DT unusual/JJ write-downs/NNS)
+  ,/,
+  (NP which/WDT)
+  had/VBD
+  (NP an/DT after-tax/JJ impact/NN)
+  of/IN
+  (NP $/$ 4.9/CD million/CD)
+  ./.)
+(S
+  (NP Those/DT)
+  included/VBD
+  (NP costs/NNS)
+  associated/VBN
+  with/IN
+  (SNP
+	(NP the/DT potential/JJ Valley/NNP Federal/NNP Savings/NNP)
+	and/CC
+	(NP Loan/NNP Association/NNP acquisition/NN))
+  ,/,
+  (NP which/WDT)
+  was/VBD
+  terminated/VBN
+  on/IN
+  (SNP (NP Sept./NNP 27/CD) ,/, (NP 1989/CD))
+  ./.)
+(S
+  In/IN
+  (NP addition/NN)
+  ,/,
+  operating/VBG
+  (NP results/NNS)
+  were/VBD
+  hit/VBN
+  by/IN
+  (NP an/DT increase/NN)
+  in/IN
+  (NP loan/NN)
+  and/CC
+  (NP real/JJ estate/NN loss/NN reserves/NNS)
+  ./.)
+(S
+  In/IN
+  (SNP (NP American/NNP Stock/NNP Exchange/NNP composite/JJ) trading/NN)
+  ,/,
+  (SNP (NP Citadel/NNP shares/NNS))
+  closed/VBD
+  yesterday/NN
+  at/IN
+  (NP $/$ 45.75/CD)
+  ,/,
+  down/IN
+  (NP 25/CD cents/NNS)
+  ./.)
+
+(S
+  (SNP (NP The/DT parent/NN) of/IN (NP Younkers/NNP))
+  ,/,
+  after/IN
+  failing/VBG
+  to/TO
+  find/VB
+  (SNP (NP a/DT buyer/NN) for/IN (NP the/DT chain/NN))
+  of/IN
+  (NP Midwestern/JJ department/NN stores/NNS)
+  ,/,
+  said/VBD
+  (NP it/PRP)
+  will/MD
+  sell/VB
+  (SNP (NP a/DT stake/NN) in/IN (NP the/DT chain/NN))
+  to/TO
+  (NP management/NN)
+  and/CC
+  take/VB
+  (NP other/JJ steps/NNS)
+  to/TO
+  reduce/VB
+  (SNP (NP its/PRP$ investment/NN) in/IN (NP retailing/NN))
+  ./.)
+(S
+  (SNP
+    (NP Equitable/NNP)
+    of/IN
+    (NP Iowa/NNP Cos./NNP)
+    ,/,
+    (NP Des/NNP Moines/NNP))
+  ,/,
+  had/VBD
+  been/VBN
+  seeking/VBG
+  (SNP
+    (NP a/DT buyer/NN)
+    for/IN
+    (NP the/DT 36-store/JJ Younkers/NNP chain/NN)
+    since/IN
+    (NP June/NNP))
+  ,/,
+  when/WRB
+  (NP it/PRP)
+  announced/VBD
+  (NP its/PRP$ intention/NN)
+  to/TO
+  free/VB
+  up/IN
+  (NP capital/NN)
+  to/TO
+  expand/VB
+  (NP its/PRP$ insurance/NN business/NN)
+  ./.)
+(S
+  But/CC
+  (SNP (NP Equitable/NNP))
+  said/VBD
+  (NP it/PRP)
+  was/VBD
+  unable/JJ
+  to/TO
+  find/VB
+  (NP a/DT buyer/NN)
+  willing/JJ
+  to/TO
+  pay/VB
+  (NP what/WP)
+  (NP it/PRP)
+  considers/VBZ
+  ``/``
+  (NP fair/JJ value/NN)
+  ''/''
+  for/IN
+  (SNP
+    (NP Younkers/NNP)
+    because/IN
+    of/IN
+    (NP recent/JJ turmoil/NN)
+    in/IN
+    (NP the/DT bond/NN)
+    and/CC
+    (NP stock/NN markets/NNS))
+  and/CC
+  in/IN
+  (NP retailing/NN)
+  ./.)
+(S
+  (NP Younkers/NNS)
+  rang/VBD
+  up/IN
+  (SNP (NP sales/NNS) in/IN (NP 1988/CD))
+  of/IN
+  (NP $/$ 313/CD million/CD)
+  ./.)
+(S
+  (NP It/PRP)
+  operates/VBZ
+  (NP stores/NNS)
+  mostly/RB
+  in/IN
+  (SNP (NP Iowa/NNP) and/CC (NP Nebraska/NNP))
+  ./.)
+(S
+  (SNP (NP Younkers/NNP management/NN))
+  is/VBZ
+  likely/JJ
+  to/TO
+  buy/VB
+  (NP a/DT 10/CD %/NN)
+  to/TO
+  (NP 20/CD %/NN interest/NN)
+  in/IN
+  (SNP (NP the/DT chain/NN) in/IN (NP January/NNP))
+  ,/,
+  said/VBD
+  (SNP
+    (NP Fred/NNP S./NNP Hubbell/NNP)
+    ,/,
+    (NP Equitable/NNP 's/POS president/NN)
+    and/CC
+    (NP chief/NN executive/NN officer/NN))
+  ./.)
+(S
+  (NP He/PRP)
+  said/VBD
+  (SNP (NP Equitable/NNP))
+  hopes/VBZ
+  to/TO
+  eventually/RB
+  reduce/VB
+  (SNP (NP its/PRP$ stake/NN) in/IN (NP Younkers/NNP))
+  to/TO
+  (SNP (NP less/JJR) than/IN (NP 50/CD %/NN))
+  ./.)
+
+
+
+(S
+  (SNP (NP Savin/NNP Corp./NNP))
+  reported/VBD
+  (NP a/DT third-quarter/NN net/JJ loss/NN)
+  of/IN
+  (NP $/$ 35.2/CD million/CD)
+  ,/,
+  or/CC
+  (NP 31/CD cents/NNS)
+  (NP a/DT share/NN)
+  ,/,
+  compared/VBN
+  with/IN
+  (NP year-earlier/JJ profit/NN)
+  of/IN
+  (NP $/$ 3.8/CD million/CD)
+  ,/,
+  or/CC
+  (NP one/CD cent/NN)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (SNP (NP A/DT spokesman/NN) for/IN (NP the/DT Stamford/NNP))
+  ,/,
+  (NP Conn.based/JJ company/NN)
+  said/VBD
+  (NP operations/NNS)
+  had/VBD
+  (NP a/DT loss/NN)
+  of/IN
+  (NP $/$ 5.5/CD million/CD)
+  for/IN
+  (NP the/DT quarter/NN)
+  ;/:
+  in/IN
+  (NP addition/NN)
+  ,/,
+  (NP the/DT loss/NN)
+  was/VBD
+  magnified/VBN
+  by/IN
+  nonrecurring/VBG
+  (NP charges/NNS)
+  totaling/VBG
+  (NP $/$ 23.5/CD million/CD)
+  and/CC
+  (NP $/$ 8.2/CD million/CD)
+  in/IN
+  (NP asset-valuation/NN adjustments/NNS)
+  that/IN
+  (NP he/PRP)
+  described/VBD
+  as/IN
+  ``/``
+  (NP unusual/JJ)
+  ./.)
+(S
+  ''/''
+  (NP The/DT charges/NNS)
+  were/VBD
+  partly/RB
+  offset/VBN
+  by/IN
+  (NP a/DT $/$ 2/CD million/CD gain/NN)
+  on/IN
+  (NP the/DT sale/NN)
+  of/IN
+  (NP investments/NNS)
+  of/IN
+  (NP two/CD joint/JJ ventures/NNS)
+  ,/,
+  (NP he/PRP)
+  said/VBD
+  ./.)
+(S
+  (NP Revenue/NN)
+  declined/VBD
+  (NP 8/CD %/NN)
+  to/TO
+  (NP $/$ 85.7/CD million/CD)
+  ,/,
+  from/IN
+  (NP $/$ 93.3/CD million/CD)
+  (NP a/DT year/NN)
+  earlier/JJR
+  ./.)
+(S
+  (NP Savin/NNP)
+  cited/VBD
+  ``/``
+  (NP a/DT general/JJ softening/NN)
+  in/IN
+  (NP the/DT demand/NN)
+  for/IN
+  (NP office/NN products/NNS)
+  in/IN
+  (NP the/DT market/NN segments/NNS)
+  in/IN
+  (NP which/WDT)
+  (NP Savin/NNP)
+  competes/VBZ
+  ./.)
+(S ''/'')
+(S ''/'')
+
+
+(S
+  (SNP (NP Freeport-McMoRan/NNP Inc./NNP))
+  said/VBD
+  (NP it/PRP)
+  will/MD
+  convert/VB
+  (SNP
+    (NP
+      its/PRP$
+      Freeport-McMoRan/NNP
+      Energy/NNP
+      Partners/NNPS
+      Ltd./NNP
+      partnership/NN))
+  into/IN
+  (SNP
+  (NP a/DT)
+  publicly/RB
+  traded/VBN
+  (NP company/NN))
+  through/IN
+  (NP the/DT exchange/NN)
+  of/IN
+  (NP units/NNS)
+  of/IN
+  (NP the/DT partnership/NN)
+  for/IN
+  (NP common/JJ shares/NNS)
+  ./.)
+(S
+  (NP The/DT company/NN)
+  said/VBD
+  (NP the/DT restructuring/NN)
+  is/VBZ
+  n't/RB
+  expected/VBN
+  to/TO
+  have/VB
+  (NP any/DT impact/NN)
+  ,/,
+  (NP adverse/JJ)
+  or/CC
+  otherwise/RB
+  ,/,
+  on/IN
+  (NP its/PRP$ financial/JJ results/NNS)
+  ./.)
+(S
+  (SNP
+    (NP Freeport-McMoRan/NNP)
+    ,/,
+    (NP
+      a/DT
+      New/NNP
+      Orleans-based/JJ
+      diversified/JJ
+      energy/NN
+      conglomerate/NN))
+  ,/,
+  said/VBD
+  (NP the/DT partnership/NN)
+  will/MD
+  exchange/VB
+  (NP its/PRP$ assets/NNS)
+  for/IN
+  (NP common/JJ shares/NNS)
+  of/IN
+  (NP a/DT yet-to-be-formed/JJ entity/NN)
+  ./.)
+(S
+  (SNP (NP Freeport-McMoRan/NNP Energy/NNP Partners/NNP))
+  will/MD
+  be/VB
+  liquidated/VBN
+  and/CC
+  (NP shares/NNS)
+  of/IN
+  (NP the/DT new/JJ company/NN)
+  distributed/VBN
+  to/TO
+  (NP the/DT partnership/NN 's/POS unitholders/NNS)
+  ./.)
+(S
+  (NP Unitholders/NNS)
+  will/MD
+  receive/VB
+  (NP
+    two/CD
+    additional/JJ
+    55/CD
+    cents-a-unit/JJ
+    distribution/NN
+    payments/NNS)
+  before/IN
+  (NP the/DT trust/NN)
+  is/VBZ
+  liquidated/VBN
+  in/IN
+  (NP early/JJ 1990/CD)
+  ,/,
+  (NP the/DT company/NN)
+  said/VBD
+  ./.)
+(S
+  (NP It/PRP)
+  is/VBZ
+  expected/VBN
+  that/IN
+  (NP common/JJ shares/NNS)
+  equal/JJ
+  to/TO
+  (NP the/DT number/NN)
+  of/IN
+  (NP units/NNS)
+  outstanding/JJ
+  --/:
+  about/IN
+  (NP 108/CD million/CD) on/IN (NP Sept./NNP 30/CD)
+  --/:
+  will/MD
+  be/VB
+  issued/VBN
+  during/IN
+  (NP the/DT first/JJ quarter/NN)
+  of/IN
+  (NP 1990/CD)
+  ./.)
+(S
+  (SNP
+    (NP Freeport-McMoRan/NNP)
+    ,/,
+    (NP the/DT parent/NN company/NN))
+  ,/,
+  holds/VBZ
+  roughly/RB
+  (NP 80/CD %/NN)
+  of/IN
+  (NP the/DT units/NNS)
+  outstanding/JJ
+  ./.)
+
+
+
+
+(S
+  (SNP
+    (NP Heritage/NNP Media/NNP Corp./NNP)
+    ,/,
+    (NP New/NNP York/NNP))
+  ,/,
+  said/VBD
+  (NP it/PRP)
+  offered/VBD
+  to/TO
+  buy/VB
+  (SNP
+    (NP the/DT shares/NNS)
+    of/IN
+    (NP POP/NNP Radio/NNP Corp./NNP it/PRP))
+  does/VBZ
+  n't/RB
+  already/RB
+  own/VB
+  in/IN
+  (NP a/DT stock/NN swap/NN)
+  ./.)
+(S
+  (SNP (NP Heritage/NNP))
+  ,/, 
+  (NP which/WDT)
+  owns/VBZ
+  (SNP
+    (NP 51/CD %/NN)
+    of/IN
+    (NP POP/NNP 's/POS 3.6/CD million/CD shares/NNS)
+    outstanding/JJ)
+  ,/,
+  said/VBD
+  (NP it/PRP)
+  will/MD
+  exchange/VB
+  (SNP
+    (NP one/CD share/NN)
+    of/IN
+    (NP a/DT new/JJ preferred/VBN stock/NN))
+  for/IN
+  (SNP
+    (NP each/DT POP/NNP common/JJ share/NN))
+  (NP it/PRP)
+  does/VBZ
+  n't/RB
+  already/RB
+  own/VB
+  ./.)
+(S
+  Depending/VBG
+  upon/IN
+  how/WRB
+  (NP many/JJ warrants/NNS)
+  and/CC
+  (NP options/NNS)
+  are/VBP
+  exercised/VBN
+  prior/RB
+  to/TO
+  (NP completion/NN)
+  of/IN
+  (NP the/DT transaction/NN) 
+  ,/,
+  (SNP (NP Heritage/NNP))
+  would/MD
+  issue/VB
+  between/IN
+  (NP 1.8/CD million/CD)
+  and/CC
+  (NP 2.35/CD million/CD preferred/VBN shares/NNS))
+  ,/,
+  (SNP (NP a/DT Heritage/NNP spokesman/NN))
+  estimated/VBD
+  ./.)
+(S
+  In/IN
+  (NP national/JJ over-the-counter/JJ trading/NN yesterday/NN)
+    ,/,
+  (SNP (NP POP/NNP))
+  plunged/VBD
+  (NP $/$ 4/CD)
+  to/TO
+  (NP $/$ 14.75/CD)
+  ./.)
+(S
+  (NP The/DT preferred/VBN stock/NN)
+  ,/,
+  (NP which/WDT)
+  would/MD
+  have/VB
+  (NP a/DT dividend/NN rate/NN)
+  of/IN
+  (NP $/$ 1.76/CD)
+  (NP a/DT year/NN)
+  ,/,
+  would/MD
+  be/VB
+  convertible/JJ
+  into/IN
+  (SNP (NP Heritage/NNP common/JJ))
+  at/IN
+  (NP a/DT rate/NN)
+  of/IN
+  (NP four/CD common/JJ shares/NNS)
+  for/IN
+  (NP each/DT)
+  preferred/VBD
+  ./.)
+(S
+  (SNP (NP New/NNP York-based/JJ POP/NNP Radio/NNP))
+  provides/VBZ
+  ,/,
+  through/IN
+  (NP a/DT national/JJ)
+  ,/,
+  (NP in-store/JJ network/NN)
+  ,/,
+  (NP a/DT customized/VBN music/NN)
+  ,/,
+  (NP information/NN)
+  and/CC
+  (NP advertising/VBG service/NN)
+  (NP which/WDT)
+  simulates/VBZ
+  (NP live/JJ radio/NN)
+  ./.)
+(S
+  (SNP (NP Heritage/NNP))
+  owns/VBZ
+  and/CC
+  operates/VBZ
+  (NP television/NN)
+  and/CC
+  (NP radio/NN stations/NNS)
+  and/CC
+  (NP in-store/JJ advertising/NN)
+  and/CC
+  (NP promotion/NN programs/NNS)
+  ./.)
+
+
+
+
+
+(S
+  (SNP
+    (NP RMS/NNP International/NNP Inc./NNP)
+    ,/,
+    (NP Hasbrouk/NNP Heights/NNP)
+    ,/,
+    (NP N.J./NNP))
+  ,/,
+  facing/VBG
+  (NP a/DT cash-flow/JJ squeeze/NN)
+  ,/,
+  said/VBD
+  (NP it/PRP)
+  is/VBZ
+  seeking/VBG
+  (NP other/JJ financing/VBG sources/NNS)
+  and/CC
+  (NP waivers/NNS)
+  from/IN
+  (NP debenture/NN holders/NNS)
+  ./.)
+(S
+  (NP The/DT company/NN)
+  said/VBD
+  that/IN
+  because/IN
+  of/IN
+  softening/VBG
+  (NP sales/NNS)
+  (NP it/PRP)
+  is/VBZ
+  n't/RB
+  in/IN
+  (NP compliance/NN)
+  with/IN
+  (NP requirements/NNS)
+  that/IN
+  (NP it/PRP)
+  maintain/VB
+  (NP $/$ 3/CD million/CD)
+  in/IN
+  (NP working/VBG capital/NN)
+  ./.)
+(S
+  (SNP (NP RMS/NNP))
+  distributes/VBZ
+  (NP electronic/JJ devices/NNS)
+  and/CC
+  produces/VBZ
+  (NP power/NN supplies/NNS)
+  and/CC
+  (NP plastic/JJ literature/NN displays/NNS)
+  ./.)
+(S
+  (SNP (NP RMS/NNP))
+  said/VBD
+  (NP it/PRP)
+  had/VBD
+  (NP a/DT loss/NN)
+  of/IN
+  (NP $/$ 158,666/CD)
+  ,/,
+  or/CC
+  (NP 10/CD cents/NNS)
+  (NP a/DT share/NN)
+  ,/,
+  in/IN
+  (NP the/DT third/JJ quarter/NN)
+  ,/,
+  compared/VBN
+  with/IN
+  (NP a/DT year-earlier/JJ loss/NN)
+  of/IN
+  (NP $/$ 26,956/CD)
+  ,/,
+  or/CC
+  (NP two/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (NP Sales/NNS)
+  rose/VBD
+  to/TO
+  (NP $/$ 3/CD million/CD)
+  from/IN
+  (NP $/$ 2.9/CD million/CD)
+  ./.)
+(S
+  For/IN
+  (NP the/DT nine/CD months/NNS)
+  ,/,
+  (NP the/DT company/NN)
+  reported/VBD
+  (NP a/DT net/JJ loss/NN)
+  of/IN
+  (NP $/$ 608,413/CD)
+  ,/,
+  or/CC
+  (NP 39/CD cents/NNS)
+  (NP a/DT share/NN)
+  ,/,
+  compared/VBN
+  with/IN
+  (NP year-earlier/JJ net/JJ income/NN)
+  of/IN
+  (NP $/$ 967,809/CD)
+  ,/,
+  or/CC
+  (NP 62/CD cents/NNS)
+  (NP a/DT share/NN)
+  ./.)
+(S
+  (NP Sales/NNS)
+  rose/VBD
+  to/TO
+  (NP $/$ 9.8/CD million/CD)
+  from/IN
+  (NP $/$ 8.9/CD million/CD)
+  ./.)
+
+
+
+(S
+  (SNP (NP Carnival/NNP Cruise/NNP Lines/NNP Inc./NNP))
+  said/VBD
+  (NP potential/JJ problems/NNS)
+  with/IN
+  (NP the/DT construction/NN)
+  of/IN
+  (SNP
+	(NP two/CD big/JJ cruise/NN ships/NNS)
+	from/IN
+	(NP Finland/NNP))
+  have/VBP
+  been/VBN
+  averted/VBN
+  ./.)
+(S
+  (NP Last/JJ week/NN)
+  ,/,
+  (SNP (NP Miami-based/JJ Carnival/NNP))
+  disclosed/VBD
+  that/IN
+  (SNP
+	(NP Waertsilae/NNP Marine/NNP Industries/NNPS)
+	,/,
+	(NP the/DT Finnish/JJ shipyard/NN))
+  (NP that/WDT)
+  is/VBZ
+  building/VBG
+  (SNP (NP Carnival/NNP 's/POS new/JJ cruise/NN ships/NNS))
+  ,/,
+  planned/VBD
+  to/TO
+  file/VB
+  for/IN
+  (NP bankruptcy/NN)
+  ./.)
+(S
+  (NP Yesterday/NN)
+  ,/,
+  (SNP (NP Carnival/NNP))
+  said/VBD
+  (NP a/DT new/JJ company/NN)
+  has/VBZ
+  been/VBN
+  formed/VBN
+  in/IN
+  (SNP (NP Finland/NNP))
+  (NP that/WDT)
+  will/MD
+  carry/VB
+  on/IN
+  (SNP (NP Waertsilae/NNP 's/POS shipbuilding/NN operations/NNS))
+  ./.)
+(S
+  (SNP (NP Carnival/NNP))
+  said/VBD
+  (NP it/PRP)
+  will/MD
+  be/VB
+  (NP an/DT 11/CD %/NN shareholder/NN)
+  in/IN
+  (NP the/DT new/JJ company/NN)
+  ./.)
+(S
+  (SNP (NP Carnival/NNP))
+  said/VBD
+  (SNP
+	(NP the/DT Fantasy/NNP)
+	,/,
+	(NP a/DT 2,050-passenger/JJ ship/NN))
+  (NP that/WDT)
+  was/VBD
+  slated/VBN
+  to/TO
+  be/VB
+  delivered/VBN
+  (NP this/DT month/NN)
+  ,/,
+  will/MD
+  be/VB
+  delivered/VBN
+  in/IN
+  (SNP (NP January/NNP))
+  ./.)
+(S
+  (NP A/DT second/JJ ship/NN)
+  is/VBZ
+  now/RB
+  expected/VBN
+  to/TO
+  be/VB
+  delivered/VBN
+  (NP late/JJ next/JJ year/NN)
+  or/CC
+  early/RB
+  in/IN
+  (NP 1991/CD)
+  ./.)
+(S
+  (SNP (NP Carnival/NNP))
+  had/VBD
+  expected/VBN
+  (NP that/DT ship/NN)
+  to/TO
+  be/VB
+  delivered/VBN
+  (NP next/JJ fall/NN)
+  ./.)
+(S
+  (NP A/DT planned/VBN third/JJ ship/NN)
+  still/RB
+  may/MD
+  be/VB
+  built/VBN
+  in/IN
+  (NP the/DT Finnish/JJ shipyard/NN)
+  ,/,
+  or/CC
+  may/MD
+  be/VB
+  built/VBN
+  elsewhere/RB
+  ,/,
+  (SNP (NP Carnival/NNP))
+  said/VBD
+  ./.)
+
+(S
+  (SNP (NP Sony/NNP Corp./NNP))
+  completed/VBD
+  (SNP
+    (NP its/PRP$ tender/NN offer/NN)
+    for/IN
+    (NP Columbia/NNP Pictures/NNPS Entertainment/NNP Inc./NNP)
+    ,/,
+    with/IN
+    (NP Columbia/NNP shareholders/NNS))
+  tendering/VBG
+  (SNP (NP 99.3/CD %/NN) of/IN (NP all/DT common/JJ shares/NNS))
+  outstanding/JJ
+  by/IN
+  (SNP (NP the/DT Tuesday/NNP deadline/NN))
+  ./.)
+(S
+  (SNP (NP Sony/NNP Columbia/NNP Acquisition/NNP Corp./NNP))
+  ,/,
+  formed/VBN
+  for/IN
+  (SNP (NP the/DT Columbia/NNP deal/NN))
+  ,/,
+  will/MD
+  formally/RB
+  take/VB
+  (SNP (NP ownership/NN) of/IN (NP the/DT movie/NN studio/NN))
+  later/JJ
+  (SNP (NP this/DT month/NN) ,/, (NP a/DT spokesman/NN))
+  said/VBD
+  ./.)
+(S
+  (SNP (NP Sony/NNP))
+  is/VBZ
+  paying/VBG
+  (SNP
+    (NP $/$ 27/CD)
+    (NP a/DT share/NN)
+    ,/,
+    or/CC
+    (NP $/$ 3.55/CD billion/CD))
+  ,/,
+  (NP cash/NN)
+  and/CC
+  is/VBZ
+  assuming/VBG
+  (SNP (NP $/$ 1.4/CD billion/CD) of/IN (NP long-term/JJ debt/NN))
+  ./.)
+(S
+  Still/RB
+  (NP unresolved/JJ)
+  is/VBZ
+  (SNP (NP Sony/NNP 's/POS effort/NN))
+  to/TO
+  hire/VB
+  (SNP
+    (NP producers/NNS Jon/NNP Peters/NNP)
+    and/CC
+    (NP Peter/NNP Guber/NNP))
+  to/TO
+  run/VB
+  (NP the/DT studio/NN)
+  ./.)
+(S
+  (SNP
+    (NP Sony/NNP 's/POS planned/VBN acquisition/NN)
+    of/IN
+    (NP Guber\/Peters/NNP Entertainment/NNP Co./NNP)
+    for/IN
+    (NP $/$ 200/CD million/CD))
+  is/VBZ
+  scheduled/VBN
+  to/TO
+  close/VB
+  (SNP (NP Monday/NNP))
+  ./.)
+(S
+  (SNP (NP Guber\/Peters/NNP))
+  has/VBZ
+  been/VBN
+  locked/VBN
+  in/IN
+  (SNP
+    (NP litigation/NN)
+    with/IN
+    (NP Warner/NNP Communications/NNPS Inc./NNP))
+  in/IN
+  (NP an/DT attempt/NN)
+  to/TO
+  get/VB
+  out/IN
+  of/IN
+  (SNP
+    (NP an/DT exclusive/JJ production/NN contract/NN)
+    with/IN
+    (NP Warner/NNP))
+  ./.)
+(S
+  (NP Both/DT)
+  (NP sides/NNS)
+  are/VBP
+  in/IN
+  (NP talks/NNS)
+  to/TO
+  settle/VB
+  (NP the/DT dispute/NN)
+  ./.)
+
+
+
+(S
+  (NP The/DT Finnish/JJ government/NN)
+  and/CC
+  (SNP
+    (NP major/JJ creditors/NNS)
+    of/IN
+    (NP
+      bankrupt/JJ
+      shipyard/NN
+      Waertsilae/NNP
+      Marine/NNP
+      Industries/NNPS
+      Oy/NNP))
+  agreed/VBD
+  in/IN
+  (NP principle/NN)
+  to/TO
+  form/VB
+  (NP a/DT new/JJ company/NN)
+  to/TO
+  complete/VB
+  (NP most/JJS)
+  of/IN
+  (NP the/DT troubled/JJ shipyard/NN 's/POS backlog/NN)
+  of/IN
+  (NP 15/CD ships/NNS)
+  ./.)
+(S
+  (NP The/DT new/JJ company/NN)
+  will/MD
+  attempt/VB
+  to/TO
+  limit/VB
+  (NP the/DT shipyard/NN 's/POS losses/NNS)
+  ,/,
+  (NP participants/NNS)
+  said/VBD
+  ./.)
+(S
+  ``/``
+  (NP The/DT situation/NN)
+  is/VBZ
+  that/IN
+  (NP the/DT bankruptcy/NN court/NN)
+  will/MD
+  get/VB
+  out/IN
+  of/IN
+  (NP the/DT shipbuilding/NN business/NN)
+  ./.)
+(S
+  (NP Everything/NN)
+  will/MD
+  be/VB
+  taken/VBN
+  over/IN
+  by/IN
+  (NP the/DT new/JJ company/NN)
+  ,/,
+  ''/''
+  said/VBD
+  (SNP
+    (NP Christian/NNP Andersson/NNP)
+    ,/,
+    (NP executive/JJ vice/NN president/NN)
+    of/IN
+    (NP Oy/NNP Waertsilae/NNP)
+    ,/,
+    (NP former/JJ parent/NN)
+    of/IN
+    (NP Waertsilae/NNP Marine/NNP))
+  ./.)
+(S
+  Once/RB
+  (NP its/PRP$ ownership/NN)
+  is/VBZ
+  finalized/VBN
+  ,/,
+  (NP the/DT new/JJ company/NN)
+  will/MD
+  open/VB
+  (NP talks/NNS)
+  with/IN
+  (NP state-appointed/JJ receivers/NNS)
+  to/TO
+  buy/VB
+  or/CC
+  lease/VB
+  (SNP
+    (NP Waertsilae/NNP Marine/NNP 's/POS shipyard/NN facilities/NNS))
+  ./.)
+(S
+  (NP Subcontractors/NNS)
+  will/MD
+  be/VB
+  offered/VBN
+  (NP a/DT settlement/NN)
+  and/CC
+  (NP a/DT swift/NN transition/NN)
+  to/TO
+  (NP new/JJ management/NN)
+  is/VBZ
+  expected/VBN
+  to/TO
+  avert/VB
+  (NP an/DT exodus/NN)
+  of/IN
+  (SNP
+    (NP skilled/JJ workers/NNS)
+    from/IN
+    (NP Waertsilae/NNP Marine/NNP 's/POS two/CD big/JJ shipyards/NNS))
+  ,/,
+  (NP government/NN officials/NNS)
+  said/VBD
+  ./.)
+(S
+  Under/IN
+  (NP an/DT accord/NN)
+  signed/VBN
+  yesterday/NN
+  ,/,
+  (SNP
+    (NP the/DT government/NN)
+    and/CC
+    (NP Union/NNP Bank/NNP)
+    of/IN
+    (NP Finland/NNP))
+  would/MD
+  become/VB
+  (SNP
+    (NP major/JJ shareholders/NNS)
+    in/IN
+    (NP the/DT new/JJ company/NN))
+  ,/,
+  (NP each/DT)
+  injecting/VBG
+  (NP 100/CD million/CD Finnish/JJ markkaa/NN)
+  (/(
+  (NP $/$ 23.5/CD million/CD)
+  )/)
+  ./.)
+(S
+  (NP Oy/NNP Waertsilae/NNP)
+  is/VBZ
+  to/TO
+  contribute/VB
+  (NP 200/CD million/CD markkaa/NN)
+  ,/,
+  most/JJS
+  of/IN
+  (NP it/PRP)
+  as/IN
+  subordinated/VBN
+  (NP debt/NN)
+  ,/,
+  and/CC
+  take/VB
+  (SNP
+    (NP a/DT minority/NN stake/NN)
+    in/IN
+    (NP the/DT new/JJ company/NN))
+  ./.)
+(S
+  (NP Customers/NNS)
+  holding/VBG
+  (SNP
+    (NP contracts/NNS)
+    for/IN
+    (NP Waertsilae/NNP Marine/NNP 's/POS undelivered/JJ ships/NNS))
+  are/VBP
+  expected/VBN
+  to/TO
+  subscribe/VB
+  (NP most/JJS)
+  of/IN
+  (NP the/DT)
+  remaining/VBG
+  (NP 170/CD million/CD markkaa/NN)
+  in/IN
+  (NP share/NN capital/NN)
+  ,/,
+  (NP government/NN officials/NNS)
+  said/VBD
+  ./.)
+(S
+  (SNP (NP Waertsilae/NNP Marine/NNP 's/POS biggest/JJS creditor/NN))
+  is/VBZ
+  (SNP
+    (NP Miami-based/JJ Carnival/NNP Cruise/NNP Lines/NNPS Inc/NNP))
+  ./.)
+(S
+  (NP Carnival/NNP)
+  ,/,
+  (NP which/WDT)
+  has/VBZ
+  (NP three/CD ships/NNS)
+  on/IN
+  (NP order/NN)
+  from/IN
+  (NP Waertsilae/NNP Marine/NNP)
+  ,/,
+  presented/VBD
+  (NP claims/NNS)
+  for/IN
+  (NP $/$ 1.5/CD billion/CD damages/NNS)
+  in/IN
+  (NP the/DT bankruptcy/NN court/NN)
+  (NP this/DT week/NN)
+  ./.)
+(S
+  (SNP
+    (NP
+      Waertsilae/NNP
+      Marine/NNP
+      's/POS
+      bankruptcy/NN
+      proceedings/NNS))
+  began/VBD
+  (NP Tuesday/NNP)
+  in/IN
+  (NP a/DT Helsinki/NNP court/NN)
+  ./.)
+
+
+(S
+  (SNP (NP John/NNP F./NNP Barrett/NNP) ,/, (NP 40/CD)
+  ,/,
+  formerly/RB
+  (NP executive/JJ vice/NN president/NN)
+  and/CC
+  (NP chief/NN financial/JJ officer/NN))
+  ,/,
+  was/VBD
+  named/VBN
+  (NP president/NN)
+  and/CC
+  (NP chief/NN operating/VBG officer/NN)
+  ,/,
+  (NP posts/NNS)
+  (NP which/WDT)
+  had/VBD
+  been/VBN
+  vacant/JJ
+  ./.)
+
+
+
+
+(S
+  (SNP
+    (NP Leon/NNP J./NNP Level/NNP)
+    ,/,
+    (NP vice/NN president/NN)
+    and/CC
+    (NP chief/NN financial/JJ officer/NN)
+    of/IN
+    (NP this/DT computer/NN)
+    services/NNS
+    (NP concern/NN))
+  ,/,
+  and/CC
+  (SNP
+    (NP F./NNP Warren/NNP McFarlan/NNP)
+    ,/,
+    (NP a/DT professor/NN)
+    at/IN
+    (NP Harvard/NNP University/NNP 's/POS Graduate/NNP School/NNP)
+    of/IN
+    (NP Business/NNP))
+  ,/,
+  were/VBD
+  elected/VBN
+  (NP directors/NNS)
+  ,/,
+  increasing/VBG
+  (NP board/NN membership/NN)
+  to/TO
+  (NP nine/CD)
+  ./.)
+
+
+
+
+(S
+  (SNP
+    (NP David/NNP A./NNP DiLoreto/NNP)
+    ,/,
+    (NP president/NN)
+    of/IN
+    (NP metal/NN container/NN division/NN))
+  ,/,
+  was/VBD
+  named/VBN
+  to/TO
+  (SNP(NP the/DT additional/JJ post/NN)
+      of/IN
+      (NP group/NN vice/NN president/NN)
+      ,/,
+      packaging/NN
+      (NP products/NNS))
+      ,/,
+      at/IN
+  (NP this/DT)
+  packaging/NN
+  ,/,
+  (NP industrial/JJ)
+  and/CC
+  (NP aerospace/NN products/NNS concern/NN)
+  ,/,
+  succeeding/VBG
+  (SNP (NP Delmont/NNP A./NNP Davis/NNP) ,/, (NP who/WP))
+  was/VBD
+  named/VBN
+  (SNP(NP president/NN)
+  and/CC
+  (NP chief/NN operating/VBG officer/NN) in/IN (NP August/NNP))
+  ./.)

@@ -1,0 +1,3 @@
+To run the Naive Bayes experiment, just type in: 
+python NB_train_test.py
+To run the CRF experiment, you should first install the CRF++ and then run the script train.sh
