@@ -1,0 +1,5 @@
+1. Before running the program, put all train, dev and test data into data/, and put pos tagged file into pos_tagged_files/.
+2.To run the result on develop set, just run ./run-dev.sh
+To run the result on test set, just run ./run-test.sh
+It will automatically extract the feature, train the model and test with gold file.
+

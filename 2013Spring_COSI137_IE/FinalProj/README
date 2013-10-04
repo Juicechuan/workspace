@@ -1,0 +1,13 @@
+To run the program:
+Preprocessing:
+run python preprocess.py (need to uncomment some functions)
+Train:
+First, you should change the svm-light path in the svm-light-train.sh and svm-light-test.sh;
+Second, run the training scripts train_**_cls.sh, in which:
+train_tk_cls.sh : only the tree kernel
+train_tkpf_cls.sh :tree kernel and kernel with "perfect" features
+train_pf_cls.sh: "perfect" features only
+
+Then, to perform the one-vs-all method for multiclass:
+just modify the filenames in OVA-predict.py and run:
+python OVA-predict
