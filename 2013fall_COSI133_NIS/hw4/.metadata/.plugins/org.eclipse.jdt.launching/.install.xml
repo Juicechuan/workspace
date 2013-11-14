@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+<entry loc="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" stamp="1357582825000"/>
+<entry loc="/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home" stamp="1358068778000"/>
 <entry loc="/usr/lib/jvm/java-1.6.0-sun-1.6.0.45" stamp="1366273973000"/>
 </dirs>

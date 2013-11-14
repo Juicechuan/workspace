@@ -71,7 +71,7 @@ public class CommonFriends {
 		Configuration conf = new Configuration();
 
 		Job job = new Job(conf, "CommonFriends");
-
+		
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
 

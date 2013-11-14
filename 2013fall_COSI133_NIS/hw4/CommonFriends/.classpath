@@ -52,5 +52,6 @@
 	<classpathentry kind="lib" path="/home/j/llc/cwang24/bin/hadoop-1.0.3/hadoop-core-1.0.3.jar"/>
 	<classpathentry kind="lib" path="/home/j/llc/cwang24/bin/hadoop-1.0.3/hadoop-client-1.0.3.jar"/>
 	<classpathentry kind="lib" path="/home/j/llc/cwang24/bin/hadoop-1.0.3/hadoop-ant-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/home/j/llc/cwang24/bin/Cloud9/build"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
