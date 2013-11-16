@@ -5,69 +5,66 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.conf.*;
 import org.apache.hadoop.io.*;
-import org.apache.hadoop.mapreduce.*;
-import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
-import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+import org.apache.hadoop.mapred.*;
+import org.apache.hadoop.util.*;
 
 import edu.umd.cloud9.collection.wikipedia.*;
 
 public class BuildInvertedIndex {
 
-	public static class Map extends Mapper<LongWritable, WikipediaPage, Text, Text> {
+	public static class Map extends MapReduceBase implements Mapper<LongWritable, WikipediaPage, Text, Text> {
 		private Text title = new Text();
 		private Text word = new Text();
 
-		public void map(LongWritable key, WikipediaPage value, Context context)
-				throws IOException, InterruptedException {
+		public void map(LongWritable key, WikipediaPage value, OutputCollector<Text, Text> output, Reporter reporter)
+				throws IOException {
 			title.set(value.getTitle());
 			String content = value.getContent();
 			for (String token:StringUtils.split(content)){
 				word.set(token);
-				context.write(word,title);
+				output.collect(word,title);
 			}
 		}
 	}
 
-	public static class Reduce extends Reducer<Text, Text, Text, Text> {
+	public static class Reduce extends MapReduceBase implements Reducer<Text, Text, Text, Text> {
 		private Text docIds = new Text();
-
-		public void reduce(Text key, Iterable<Text> values, Context context)
-				throws IOException, InterruptedException {
+		
+		public void reduce(Text key, Iterator<Text> values, OutputCollector<Text, Text> output, Reporter reporter)
+				throws IOException {
 				HashSet<Text> uniqueDocIds = new HashSet<Text>();
 				
-				for (Text docId: values){
-					uniqueDocIds.add(new Text(docId));
+				for (;values.hasNext();){
+					uniqueDocIds.add(new Text(values.next()));
 				}
 				
 				docIds.set(new Text(StringUtils.join(uniqueDocIds,",")));
-				context.write(key,docIds);
+				output.collect(key,docIds);
 		}
+
+
 	}
 
 	public static void main(String[] args) throws Exception {
-		Configuration conf = new Configuration();
 
-		Job job = new Job(conf, "InvertedIndex");
+		JobConf conf = new JobConf(BuildInvertedIndex.class);
 		
-		job.setJarByClass(BuildInvertedIndex.class);
-		job.setInputFormatClass(WikipediaPageInputFormat.class);
-		job.setOutputFormatClass(TextOutputFormat.class);
+		conf.setInputFormat(WikipediaPageInputFormatOld.class);
+		conf.setOutputFormat(TextOutputFormat.class);
 		
-		job.setMapperClass(Map.class);
-		job.setReducerClass(Reduce.class);
+		conf.setMapperClass(Map.class);
+		conf.setReducerClass(Reduce.class);
 		
-		job.setOutputKeyClass(Text.class);
-		job.setOutputValueClass(Text.class);
+		conf.setOutputKeyClass(Text.class);
+		conf.setOutputValueClass(Text.class);
 		
 		Path outputPath = new Path("output");
-		FileInputFormat.addInputPath(job, new Path("input"));
-		FileOutputFormat.setOutputPath(job, outputPath);
+		FileInputFormat.addInputPath(conf, new Path("input"));
+		FileOutputFormat.setOutputPath(conf, outputPath);
 		
 		outputPath.getFileSystem(conf).delete(outputPath,true);
 		
-		job.waitForCompletion(true);
+		JobClient.runJob(conf);
 	}
 
 }
